@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>지도 | rululala</title>
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="map.css">
+<!-- Pages caches fixed asset URLs. loader.js gives each page load fresh local CSS/JS URLs. -->
+<script src="loader.js" data-scripts="common.js,data.js,assets/vendor/leaflet/leaflet.js,map.js"></script>
+<noscript><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="map.css"></noscript>
+</head>
+<body>
+<section id="map-page"><div class="w">
+  <h1>지도로 찾아보세요</h1>
+  <p class="map-sub">도시를 고르면 그 도시의 맛집·관광지·숙소를 지도에서 볼 수 있어요. 친구 활동 지역 표시는 예시 화면이에요.</p>
+  <div class="map-controls">
+    <select class="map-city" id="map-city" aria-label="도시 선택"></select>
+    <div class="map-cats" id="map-cats" role="group" aria-label="표시할 핀 종류"></div>
+  </div>
+  <div id="map" role="application" aria-label="도시 지도"></div>
+  <p class="map-status" id="map-status" role="status"></p>
+  <ul class="map-notes">
+    <li>맛집·관광지·숙소는 OpenStreetMap의 실제 장소 데이터예요 (© OpenStreetMap 기여자, ODbL / 2026년 11월 13일 기준). 실시간 정보가 아니라서 가게가 바뀌었거나 문을 닫았을 수 있어요.</li>
+    <li>친구는 정확한 집이 아니라 본인이 공개에 동의한 활동 지역만 보여주는 방식이에요. 지금 보이는 친구와 활동 지역은 예시이며 실제 위치가 아니에요.</li>
+    <li>지금은 30개 도시의 장소 데이터를 보여줘요. 나머지 도시는 준비 중이에요.</li>
+  </ul>
+</div></section>
+</body>
+</html>
