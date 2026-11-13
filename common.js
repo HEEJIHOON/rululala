@@ -33,7 +33,7 @@ const railHTML = `<nav class="rail" aria-label="페이지 이동">
 </nav>`;
 const footHTML = `<footer><div class="w">
   <div class="fcols">
-    <div class="fcol"><div class="flogo"><img src="assets/wordmark-mint.svg" alt="rululala"></div><p>여행지에서 만나는 동네 친구.<br>rululala은 준비 중이에요.</p></div>
+    <div class="fcol"><div class="flogo"><img src="assets/wordmark-mint.svg?v=mint-white-20261113" alt="rululala"></div><p>여행지에서 만나는 동네 친구.<br>rululala은 준비 중이에요.</p></div>
     <div class="fcol"><b>메뉴</b><a href="index.html">홈</a><a href="friends.html">친구 찾기</a><a href="world.html">도시</a><a href="map.html">지도</a><a href="stay.html">숙소</a><a href="safe.html">안전</a></div>
     <div class="fcol"><b>안내</b><a href="safe.html">안전 수칙</a><a href="credits.html">사진 크레딧</a><a href="login.html" id="foot-auth">로그인</a><a href="mypage.html">내 정보</a></div>
   </div>
