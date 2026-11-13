@@ -1,10 +1,10 @@
 const PEOPLE=[
-{id:'p1',name:'하루',city:'도쿄',country:'일본',emoji:'🌸',age:25,bio:'골목 카페와 작은 서점을 찾아다녀요. 같이 산책해요!',tags:['카페','산책','사진'],r:4.9,n:38,v:1},
-{id:'p2',name:'민준',city:'서울',country:'대한민국',emoji:'📷',age:27,bio:'맛있는 걸 먹고 사진 남기는 게 취미예요.',tags:['맛집','사진','전시'],r:4.8,n:24,v:1},
-{id:'p3',name:'Emma',city:'파리',country:'프랑스',emoji:'🥐',age:26,bio:'베이커리와 미술관을 좋아해요. 편하게 이야기해요!',tags:['카페','전시','산책'],r:4.7,n:31,v:1},
-{id:'p4',name:'루카',city:'로마',country:'이탈리아',emoji:'🍝',age:28,bio:'현지 음식과 숨은 명소를 찾아다니는 여행자예요.',tags:['맛집','산책'],r:4.6,n:19,v:1},
-{id:'p5',name:'소피',city:'방콕',country:'태국',emoji:'🌴',age:24,bio:'시장 구경, 야시장, 수다 떠는 걸 좋아해요.',tags:['맛집','쇼핑','사진'],r:4.9,n:42,v:1},
-{id:'p6',name:'리아',city:'시드니',country:'호주',emoji:'🦘',age:26,bio:'해변 산책과 브런치를 좋아해요. 편하게 말 걸어 주세요!',tags:['카페','산책','사진'],r:4.7,n:22,v:1}
+{id:'p1',name:'하루',photo:'assets/people/1-face1.jpg',city:'도쿄',country:'일본',emoji:'🌸',age:25,bio:'골목 카페와 작은 서점을 찾아다녀요. 같이 산책해요!',tags:['카페','산책','사진'],r:4.9,n:38,v:1},
+{id:'p2',name:'민준',photo:'assets/people/4-face4.jpg',city:'서울',country:'대한민국',emoji:'📷',age:27,bio:'맛있는 걸 먹고 사진 남기는 게 취미예요.',tags:['맛집','사진','전시'],r:4.8,n:24,v:1},
+{id:'p3',name:'Emma',photo:'assets/people/2-face2.jpg',city:'파리',country:'프랑스',emoji:'🥐',age:26,bio:'베이커리와 미술관을 좋아해요. 편하게 이야기해요!',tags:['카페','전시','산책'],r:4.7,n:31,v:1},
+{id:'p4',name:'루카',photo:'assets/people/5-face5.jpg',city:'로마',country:'이탈리아',emoji:'🍝',age:28,bio:'현지 음식과 숨은 명소를 찾아다니는 여행자예요.',tags:['맛집','산책'],r:4.6,n:19,v:1},
+{id:'p5',name:'소피',photo:'assets/people/3-face3.jpg',city:'방콕',country:'태국',emoji:'🌴',age:24,bio:'시장 구경, 야시장, 수다 떠는 걸 좋아해요.',tags:['맛집','쇼핑','사진'],r:4.9,n:42,v:1},
+{id:'p6',name:'리아',photo:'assets/people/6-face6.jpg',city:'시드니',country:'호주',emoji:'🦘',age:26,bio:'해변 산책과 브런치를 좋아해요. 편하게 말 걸어 주세요!',tags:['카페','산책','사진'],r:4.7,n:22,v:1}
 ];
 const ICE=[['맛집 추천',c=>`${c}에서 현지인이 자주 가는 맛집을 추천해 주실 수 있나요?`],['숨은 명소',c=>`${c}에서 관광객이 잘 모르는 명소가 있을까요?`],['문화·언어',()=>'현지 문화와 언어를 조금 배우고 싶어요. 어떤 표현부터 익히면 좋을까요?'],['일정 소개',c=>`안녕하세요! ${c} 여행을 계획 중이에요. 꼭 해 볼 만한 경험이 있을까요?`]];
 
@@ -13,6 +13,7 @@ const get=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null
 const set=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}};
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const find=id=>PEOPLE.find(p=>p.id===id);
+const av=p=>p.photo?`<img class="avimg" src="${p.photo}" alt="${esc(p.name)} 예시 프로필 사진 (AI로 만든 가상 인물)">`:p.emoji;
 
 /* ===== 계정별 저장소: 키에 사용자 ID(또는 guest)를 붙여 섞이지 않게 해요 ===== */
 const isIn=()=>!!(ME&&ME.id);
@@ -118,7 +119,7 @@ function render(){
   const ix=agg(),R=new Map(PEOPLE.map(p=>[p.id,rate(p,ix)]));
   const list=PEOPLE.filter(p=>!bl.includes(p.id)&&(!q||[p.name,p.city,p.country,p.bio].concat(p.tags).join(' ').toLowerCase().includes(q))&&(!city||p.city===city)&&(!tag||p.tags.includes(tag))&&(!min||R.get(p.id).avg>=min)&&(!ver||p.v));
   list.sort((a,b)=>sort==='rating'?R.get(b.id).avg-R.get(a.id).avg:sort==='reviews'?R.get(b.id).n-R.get(a.id).n:(b.v-a.v)||R.get(b.id).avg-R.get(a.id).avg);
-  $('#grid').innerHTML=list.length?list.map(p=>{const r=R.get(p.id);return `<article class="pc"><div class="pc-top"><div class="av">${p.emoji}</div><div><h3>${esc(p.name)}</h3><div class="meta">${p.age}세 · ${esc(p.city)}, ${esc(p.country)}</div></div></div><button class="badge ${p.v?'ok':'no'}" data-act="trust" data-id="${p.id}">${p.v?'✓ 인증 표시 · 데모':'인증 전 · 데모'}</button><div><span class="stars">${stars(r.avg)}</span> <b>${r.avg.toFixed(1)}</b> <span class="meta">(${r.n}개 평가)</span></div><p>${esc(p.bio)}</p><div class="tg">${p.tags.map(t=>`<span>${esc(t)}</span>`).join('')}</div><div class="acts"><button class="mini pri" data-act="chat" data-id="${p.id}">메시지</button><button class="mini" data-act="rev" data-id="${p.id}">★ 후기</button><button class="mini" data-act="fav" data-id="${p.id}" aria-pressed="${fav.includes(p.id)}" aria-label="${esc(p.name)}님 즐겨찾기">${fav.includes(p.id)?'♥':'♡'}</button><button class="mini" data-act="rep" data-id="${p.id}">신고</button><button class="mini" data-act="blk" data-id="${p.id}">차단</button></div></article>`}).join(''):'<div class="empty">조건에 맞는 친구가 없어요.<br>검색어나 필터를 바꿔 보세요.</div>';
+  $('#grid').innerHTML=list.length?list.map(p=>{const r=R.get(p.id);return `<article class="pc"><div class="pc-top"><div class="av">${av(p)}</div><div><h3>${esc(p.name)}</h3><div class="meta">${p.age}세 · ${esc(p.city)}, ${esc(p.country)}</div></div></div><button class="badge ${p.v?'ok':'no'}" data-act="trust" data-id="${p.id}">${p.v?'✓ 인증 표시 · 데모':'인증 전 · 데모'}</button><div><span class="stars">${stars(r.avg)}</span> <b>${r.avg.toFixed(1)}</b> <span class="meta">(${r.n}개 평가)</span></div><p>${esc(p.bio)}</p><div class="tg">${p.tags.map(t=>`<span>${esc(t)}</span>`).join('')}</div><div class="acts"><button class="mini pri" data-act="chat" data-id="${p.id}">메시지</button><button class="mini" data-act="rev" data-id="${p.id}">★ 후기</button><button class="mini" data-act="fav" data-id="${p.id}" aria-pressed="${fav.includes(p.id)}" aria-label="${esc(p.name)}님 즐겨찾기">${fav.includes(p.id)?'♥':'♡'}</button><button class="mini" data-act="rep" data-id="${p.id}">신고</button><button class="mini" data-act="blk" data-id="${p.id}">차단</button></div></article>`}).join(''):'<div class="empty">조건에 맞는 친구가 없어요.<br>검색어나 필터를 바꿔 보세요.</div>';
 }
 
 /* ===== 기능 ===== */
