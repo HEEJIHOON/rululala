@@ -24,3 +24,7 @@
 - `assets/parks/uae.jpg` — 페라리 월드 아부다비 (아랍에미리트 야스 섬, 아랍에미리트). 사진: Jeremy Thompson, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Ferrari_World_Abu_Dhabi_(39958224660).jpg
 - `assets/parks/turkey.jpg` — 이스판불 (튀르키예 이스탄불, 튀르키예). 사진: Jelican9, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Isfanbul_Theme_Park_entrance_(1).jpg
 - `assets/parks/southafrica.jpg` — 골드 리프 시티 (남아프리카공화국 요하네스버그, 남아프리카공화국). 사진: Nolween, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Gold_Reef_City_005.jpg
+- `assets/night/1-tokyo.jpg` — 도쿄 타워 야경 (일본 도쿄, 홈 도시 슬라이더). 사진: Kakidai, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Tokyo_Tower_at_night_7.JPG
+- `assets/night/2-paris.jpg` — 에펠탑과 센강 노을 (프랑스 파리, 홈 도시 슬라이더). 사진: Getfunky Paris, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg
+- `assets/night/3-bangkok.jpg` — 왓 아룬 야경 (태국 방콕, 홈 도시 슬라이더). 사진: Radek Kucharski, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Wat_Arun_at_night.jpg
+- `assets/night/4-newyork.jpg` — 브루클린 브리지와 맨해튼 야경 (미국 뉴욕, 홈 도시 슬라이더). 사진: Rhododendrites, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge,_Manhattan_at_night_1.jpg
