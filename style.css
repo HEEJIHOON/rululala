@@ -525,3 +525,4 @@ body.home .rail-logo::after{color:#12d0a0}
 .fav img,.av img,.avimg{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
 .fp .fav,.av{overflow:hidden}
 @media (max-width:640px){body.home .tb-logo img{height:38px}body.home .w{padding-left:14px;padding-right:14px}body.home .tb-search input{font-size:15px}body.home .tb-search{margin-left:0}body.home .slide{height:clamp(260px,70vw,380px)}}
+body.home .cats .cat .ci{font-size:30px;line-height:1}
