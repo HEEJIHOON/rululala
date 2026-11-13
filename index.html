@@ -9,47 +9,44 @@
 <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body>
-<div class="hero-band" id="top">
-  <div class="w">
-    <div class="constellation" aria-hidden="true">
-      <div class="fc fc1 fc-mini"><div class="fav">🌸</div><div><b>하루</b><span>도쿄 · ★4.9</span></div></div>
-      <div class="fc fc2 fc-img"><div class="fph"><img src="assets/parks/japan.jpg" alt="도쿄 디즈니랜드 사진"></div><div class="fmeta"><b>도쿄</b><span>도쿄 디즈니랜드 · 일본 지바</span></div></div>
-      <div class="fc fc3 fc-img"><div class="fph"><img src="assets/parks/france.jpg" alt="디즈니랜드 파리 사진"></div><div class="fmeta"><b>파리</b><span>디즈니랜드 파리 · 마른라발레</span></div></div>
-      <div class="fc fc4 fc-img"><div class="fph" style="background:#eceae6">🏝️</div><div class="fmeta"><b>미케 비치 숙소</b><span>다낭 · ★4.8</span></div></div>
-    </div>
-    <p class="hero-kicker">Travel ✈ Meet · Make Friends</p>
-    <h1 class="wordmark"><img src="assets/wordmark.svg" alt="rululala."></h1>
-    <p class="lead">낯선 여행지에서 특별한 친구를 만나보세요.<br>전 세계 여행지에서 현지 친구와 특별한 경험을 만들어요.</p>
-    <form class="hsearch" action="friends.html" role="search">
-      <input id="hq" name="q" type="search" placeholder="어디로 떠나시나요? 친구를 찾아보세요" aria-label="친구 검색">
-      <button type="submit" aria-label="검색"><svg viewBox="0 0 24 24"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg></button>
-    </form>
-    <div class="cpills">
-      <a class="cpill" href="world.html"><span class="ci">🗼</span>도쿄</a>
-      <a class="cpill" href="world.html"><span class="ci">🥐</span>파리</a>
-      <a class="cpill" href="world.html"><span class="ci">🌴</span>방콕</a>
-      <a class="cpill" href="friends.html"><span class="ci">🙂</span>친구 찾기</a>
-      <a class="cpill" href="stay.html"><span class="ci">🏠</span>숙소</a>
-    </div>
-  </div>
+<script>document.body.classList.add("home");</script>
+<header class="topbar"><div class="w topbar-in">
+  <a class="tb-logo" href="index.html" aria-label="rululala 홈"><img src="assets/wordmark.svg" alt="rululala."></a>
+  <form class="tb-search" action="friends.html" role="search">
+    <input id="hq" name="q" type="search" placeholder="어디로 떠나시나요? 도시나 친구를 검색해 보세요" aria-label="도시·친구 검색">
+    <button type="submit" aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+  </form>
+  <a class="tb-login" href="login.html">로그인</a>
 </div>
+<nav class="w tb-menu" aria-label="주요 메뉴">
+  <a href="index.html" aria-current="page">홈</a><a href="world.html">도시</a><a href="friends.html">친구 찾기</a><a href="stay.html">숙소</a><a href="safe.html">안전 수칙</a><a href="friends.html">현지인 채팅</a>
+</nav></header>
 
-<section class="band"><div class="w">
-  <a class="band-head" href="world.html"><h2>인기 도시</h2><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>
-  <div class="tiles4">
-    <a class="tile" href="world.html"><div class="ph"><img src="assets/parks/japan.jpg" alt="도쿄 디즈니랜드 사진" loading="lazy"></div><span class="lab">도쿄<small>도쿄 디즈니랜드 · 지바 우라야스</small></span></a>
-    <a class="tile" href="world.html"><div class="ph"><img src="assets/parks/france.jpg" alt="디즈니랜드 파리 사진" loading="lazy"></div><span class="lab">파리<small>디즈니랜드 파리 · 마른라발레</small></span></a>
-    <a class="tile" href="world.html"><div class="ph"><img src="assets/parks/thailand.jpg" alt="시암 파크 시티 사진" loading="lazy"></div><span class="lab">방콕<small>시암 파크 시티 · 방콕</small></span></a>
-    <a class="tile" href="world.html"><div class="ph"><img src="assets/parks/usa.jpg" alt="매직 킹덤 사진" loading="lazy"></div><span class="lab">뉴욕<small>매직 킹덤 · 플로리다 올랜도</small></span></a>
+<section class="hero-band" id="top"><div class="w">
+  <div class="slider" aria-roledescription="carousel" aria-label="인기 도시">
+    <div class="strack" id="strack">
+      <a class="slide" href="world.html"><img src="assets/parks/japan.jpg" alt="도쿄 디즈니랜드 사진"><span class="slab"><b>도쿄</b><small>도쿄 디즈니랜드 · 지바 우라야스</small></span></a>
+      <a class="slide" href="world.html"><img src="assets/parks/france.jpg" alt="디즈니랜드 파리 사진" loading="lazy"><span class="slab"><b>파리</b><small>디즈니랜드 파리 · 마른라발레</small></span></a>
+      <a class="slide" href="world.html"><img src="assets/parks/thailand.jpg" alt="시암 파크 시티 사진" loading="lazy"><span class="slab"><b>방콕</b><small>시암 파크 시티 · 방콕</small></span></a>
+      <a class="slide" href="world.html"><img src="assets/parks/usa.jpg" alt="매직 킹덤 사진" loading="lazy"><span class="slab"><b>뉴욕</b><small>매직 킹덤 · 플로리다 올랜도</small></span></a>
+    </div>
+    <button class="snav sprev" type="button" aria-label="이전 도시"><svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></svg></button>
+    <button class="snav snext" type="button" aria-label="다음 도시"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button>
   </div>
-</div></section>
-
-<section class="band"><div class="w">
-  <a class="band-head" href="friends.html"><h2>추천 친구</h2><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>
+  <div class="friends-row">
+  <a class="band-head" href="friends.html"><h2>현지인 채팅</h2><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>
   <div class="fp-grid">
-    <a class="fp" href="friends.html"><div class="fp-top"><div class="fav">🌸</div><div><b>하루</b><span class="meta">도쿄, 일본 · 25세</span></div></div><div><span class="stars">★★★★★</span> <b>4.9</b> <span class="meta">(38개 평가)</span></div><p>골목 카페와 작은 서점을 찾아다녀요. 같이 산책해요!</p></a>
-    <a class="fp" href="friends.html"><div class="fp-top"><div class="fav">🥐</div><div><b>Emma</b><span class="meta">파리, 프랑스 · 26세</span></div></div><div><span class="stars">★★★★★</span> <b>4.7</b> <span class="meta">(31개 평가)</span></div><p>베이커리와 미술관을 좋아해요. 편하게 이야기해요!</p></a>
-    <a class="fp" href="friends.html"><div class="fp-top"><div class="fav">🌴</div><div><b>소피</b><span class="meta">방콕, 태국 · 24세</span></div></div><div><span class="stars">★★★★★</span> <b>4.9</b> <span class="meta">(42개 평가)</span></div><p>시장 구경, 야시장, 수다 떠는 걸 좋아해요.</p></a>
+    <a class="fp" href="friends.html"><div class="fp-top"><div class="fav"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.6"/><path d="M5 20c.9-4 3.6-6 7-6s6.1 2 7 6"/></svg></div><div><b>하루</b><span class="meta">도쿄, 일본 · 25세</span></div></div><div><span class="stars">★★★★★</span> <b>4.9</b> <span class="meta">(38개 평가)</span></div><p>골목 카페와 작은 서점을 찾아다녀요. 같이 산책해요!</p></a>
+    <a class="fp" href="friends.html"><div class="fp-top"><div class="fav"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.6"/><path d="M5 20c.9-4 3.6-6 7-6s6.1 2 7 6"/></svg></div><div><b>Emma</b><span class="meta">파리, 프랑스 · 26세</span></div></div><div><span class="stars">★★★★★</span> <b>4.7</b> <span class="meta">(31개 평가)</span></div><p>베이커리와 미술관을 좋아해요. 편하게 이야기해요!</p></a>
+    <a class="fp" href="friends.html"><div class="fp-top"><div class="fav"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.6"/><path d="M5 20c.9-4 3.6-6 7-6s6.1 2 7 6"/></svg></div><div><b>소피</b><span class="meta">방콕, 태국 · 24세</span></div></div><div><span class="stars">★★★★★</span> <b>4.9</b> <span class="meta">(42개 평가)</span></div><p>시장 구경, 야시장, 수다 떠는 걸 좋아해요.</p></a>
+  </div>
+  </div>
+  <div class="cats">
+    <a class="cat" href="world.html"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg></span>도시</a>
+    <a class="cat" href="friends.html"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19c.6-3 2.7-4.7 5.5-4.7s4.9 1.7 5.5 4.7"/><circle cx="17" cy="9.5" r="2.4"/><path d="M16 14.6c2.6-.2 4.2 1.2 4.7 4"/></svg></span>친구 찾기</a>
+    <a class="cat" href="stay.html"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7"/><path d="M6 10v10h12V10"/><path d="M10 20v-5h4v5"/></svg></span>숙소</a>
+    <a class="cat" href="safe.html"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>안전 수칙</a>
+    <a class="cat" href="friends.html"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-7l-4 3.5V16H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg></span>현지인 채팅</a>
   </div>
 </div></section>
 
@@ -73,5 +70,17 @@
   <p class="steps-more">만나기 전에는 <a href="safe.html">안전 수칙</a>을 확인해 주세요. 신고·차단 내역은 친구 찾기의 안전 센터에서 관리할 수 있어요.</p>
 </div></section>
 
+<script>
+(function(){var t=document.getElementById("strack");if(!t)return;var sl=t.children,n=sl.length,i=0,timer,
+reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+function go(k){i=(k+n)%n;t.scrollTo({left:sl[i].offsetLeft-t.offsetLeft,behavior:reduce?"auto":"smooth"});}
+function start(){if(reduce)return;stop();timer=setInterval(function(){go(i+1)},4500);}
+function stop(){clearInterval(timer);}
+document.querySelector(".sprev").onclick=function(){go(i-1);start()};
+document.querySelector(".snext").onclick=function(){go(i+1);start()};
+t.addEventListener("scroll",function(){var best=0,d=1e9;for(var j=0;j<n;j++){var x=Math.abs(sl[j].offsetLeft-t.offsetLeft-t.scrollLeft);if(x<d){d=x;best=j}}i=best},{passive:true});
+t.addEventListener("pointerdown",stop);t.addEventListener("mouseenter",stop);t.addEventListener("mouseleave",start);t.addEventListener("touchend",start);
+start();})();
+</script>
 </body>
 </html>
