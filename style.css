@@ -456,3 +456,39 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 .city .spots li{margin:0 0 8px;font-size:13px;line-height:1.5}
 .city .spots li b{display:inline;font-size:13px;font-weight:600}
 .city .spots li span{display:block;color:var(--mute)}
+
+/* ===== 색 조합 (라벤더 바탕 + 보라 기본 + 핫핑크 포인트) - 색만 바꿨고 레이아웃·글꼴·간격은 그대로예요 ===== */
+:root{
+  --bg:#f1ecfd;
+  --surface-hover:#f7f3ff;
+  --grad-soft:#ebe4fb;
+  --line:#e0d7f6;
+  --line-hover:#bfb0ec;
+  --mute:#6f6a80;
+  --hot:#e0197f;
+  --hot-strong:#c4136b;
+  --deep:#241a47;
+  --shadow-sm:0 2px 10px rgba(91,70,190,.10);
+  --shadow:0 4px 8px -1px rgba(91,70,190,.14),0 2px 4px -2px rgba(91,70,190,.10);
+}
+.tab[aria-selected="true"],.stab[aria-selected="true"],.mini.pri{background:var(--main-color-strong);color:#fff}
+.btn{background:var(--hot);color:#fff;box-shadow:0 4px 24px color-mix(in srgb, var(--hot) 32%, transparent)}
+.btn:hover{background:var(--hot-strong);box-shadow:0 8px 30px color-mix(in srgb, var(--hot) 40%, transparent)}
+.btn-line{background:#fff;color:var(--ink);box-shadow:none}
+.btn-line:hover{background:var(--grad-soft);color:var(--ink);box-shadow:none}
+.banner-cta{background:var(--hot)}
+.tb-search button{background:var(--hot)}
+.hsearch,.tb-search{border-color:var(--line)}
+.safe li::before{background:var(--main-color-strong)}
+.fcol a,footer{color:#b9b1d6}
+.fcol a:hover{color:#fff}
+.stc::before{background:#e6dfff}
+.stc:nth-child(3n+2)::before{background:#f6dcec}
+.stc:nth-child(3n)::before{background:#ddd7f7}
+.hsearch button{background:var(--hot);color:#fff}
+.hsearch button:hover{background:var(--hot-strong)}
+/* 현지인 채팅 6명: 컴퓨터 3x2, 태블릿 2열, 모바일 1열 */
+.friends-row .fp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;overflow:visible}
+.friends-row .fp{flex:none}
+@media (max-width:900px){.friends-row .fp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.friends-row .fp-grid{grid-template-columns:minmax(0,1fr);gap:14px}.friends-row .fp{flex-basis:auto}}
