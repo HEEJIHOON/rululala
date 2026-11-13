@@ -455,9 +455,16 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 .city .spots li span{display:block;color:var(--mute)}
 
 /* ===== [미리보기] 홈 화면만: 흰 바탕 + 민트 그린 포인트 - 색만 바꿨고 레이아웃·글꼴·간격은 그대로예요 ===== */
-body.home{
+body.mint{
   --bg:#ffffff;
   --main-color:#0a7f69;
+  --main-color-strong:#066a58;
+  --main-color-soft:#e3f6f0;
+  --brand:#0a7f69;
+  --brand-soft:#e3f6f0;
+  --pri:#0a7f69;
+  --grad:#0a7f69;
+  --shadow-violet:0 4px 24px rgba(10,127,105,.30);
   --surface-hover:#f1faf7;
   --grad-soft:#e3f6f0;
   --line:#d5ebe4;
@@ -469,22 +476,22 @@ body.home{
   --shadow-sm:0 2px 10px rgba(10,127,105,.10);
   --shadow:0 4px 8px -1px rgba(10,127,105,.14),0 2px 4px -2px rgba(10,127,105,.10);
 }
-body.home .tab[aria-selected="true"],body.home .stab[aria-selected="true"],body.home .mini.pri{background:var(--main-color-strong);color:#fff}
-body.home .btn{background:var(--hot);color:#fff;box-shadow:0 4px 24px color-mix(in srgb, var(--hot) 32%, transparent)}
-body.home .btn:hover{background:var(--hot-strong);box-shadow:0 8px 30px color-mix(in srgb, var(--hot) 40%, transparent)}
-body.home .btn-line{background:#fff;color:var(--ink);box-shadow:none}
-body.home .btn-line:hover{background:var(--grad-soft);color:var(--ink);box-shadow:none}
-body.home .banner-cta{background:var(--hot)}
-body.home .tb-search button{background:var(--hot)}
-body.home .hsearch,body.home .tb-search{border-color:var(--line)}
-body.home .safe li::before{background:var(--main-color-strong)}
-body.home .fcol a,body.home footer{color:#b5d6cd}
-body.home .fcol a:hover{color:#fff}
-body.home .stc::before{background:#d9f3ea}
-body.home .stc:nth-child(3n+2)::before{background:#c9efe3}
-body.home .stc:nth-child(3n)::before{background:#e6f7f1}
-body.home .hsearch button{background:var(--hot);color:#fff}
-body.home .hsearch button:hover{background:var(--hot-strong)}
+body.mint .tab[aria-selected="true"],body.mint .stab[aria-selected="true"],body.mint .mini.pri{background:var(--main-color-strong);color:#fff}
+body.mint .btn{background:var(--hot);color:#fff;box-shadow:0 4px 24px color-mix(in srgb, var(--hot) 32%, transparent)}
+body.mint .btn:hover{background:var(--hot-strong);box-shadow:0 8px 30px color-mix(in srgb, var(--hot) 40%, transparent)}
+body.mint .btn-line{background:#fff;color:var(--ink);box-shadow:none}
+body.mint .btn-line:hover{background:var(--grad-soft);color:var(--ink);box-shadow:none}
+body.mint .banner-cta{background:var(--hot)}
+body.mint .tb-search button{background:var(--hot)}
+body.mint .hsearch,body.mint .tb-search{border-color:var(--line)}
+body.mint .safe li::before{background:var(--main-color-strong)}
+body.mint .fcol a,body.mint footer{color:#b5d6cd}
+body.mint .fcol a:hover{color:#fff}
+body.mint .stc::before{background:#d9f3ea}
+body.mint .stc:nth-child(3n+2)::before{background:#c9efe3}
+body.mint .stc:nth-child(3n)::before{background:#e6f7f1}
+body.mint .hsearch button{background:var(--hot);color:#fff}
+body.mint .hsearch button:hover{background:var(--hot-strong)}
 /* 현지인 채팅 6명: 컴퓨터 3x2, 태블릿 2열, 모바일 1열 */
 .friends-row .fp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;overflow:visible}
 .friends-row .fp{flex:none}
@@ -526,3 +533,9 @@ body.home .strack{gap:12px}
 .fp .fav,.av{overflow:hidden}
 @media (max-width:640px){body.home .tb-logo img{height:38px}body.home .w{padding-left:14px;padding-right:14px}body.home .tb-search input{font-size:15px}body.home .tb-search{margin-left:0}body.home .slide{height:clamp(260px,70vw,380px)}}
 body.home .cats .cat .ci{font-size:30px;line-height:1}
+/* 숙소 페이지: 데스크톱에서 한 줄 5개 */
+#stays{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+@media(max-width:900px){#stays{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+
+.flogo{display:inline-flex;align-items:center;background:#fff;border-radius:14px;padding:8px 14px}
+.flogo img{display:block;height:26px;width:auto}
