@@ -72,10 +72,10 @@ const stayTabs = document.querySelector(".stabs");
 const stayBox = document.getElementById("stays");
 
 if (stayTabs && stayBox) {
-  const card = (name, desc, tags) =>
-    `<div class="stc"><b>${name}</b><p>${desc}</p>${tags.map((t) => `<span>${t}</span>`).join("")}</div>`;
+  const card = (name, area, img, kind) =>
+    `<a class="stc" href="stay.html"><img src="${img}" alt="${name} 사진" loading="lazy"><span class="cap"><b>${name}</b><small>${kind} · ${area}</small></span></a>`;
 
   setupTabs(stayTabs, stayBox, "stay", STAYS.map((s) => s.country), (n) => {
-    stayBox.innerHTML = STAYS[n].items.map(([name, desc, tags]) => card(name, desc, tags)).join("");
+    stayBox.innerHTML = STAYS[n].items.map(([name, area, img, kind]) => card(name, area, img, kind)).join("");
   });
 }
