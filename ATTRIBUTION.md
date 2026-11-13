@@ -65,3 +65,4 @@
 - `assets/stays/15-palisade.jpg` — 호텔 팰리세이드 (시드니 밀러스 포인트, 추천 숙소). 사진: Mick Stanic (SplaTT), CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:The_Palisade_Hotel,_Millers_Point.jpg
 - `map.html`, `assets/map/pois.json` — 지도 페이지 장소 데이터. 출처: OpenStreetMap 기여자, ODbL, 2026-11-13 기준 Overpass 수집. 자세한 내용은 `assets/map/README.md`.
 - `assets/vendor/leaflet/` — Leaflet 지도 라이브러리, BSD-2-Clause. 지도 타일은 tile.openstreetmap.org (© OpenStreetMap 기여자).
+- `assets/people/1-face1.jpg` ~ `6-face6.jpg` — 예시 프로필 얼굴 사진. 이미지 생성 도구로 만든 가상 인물이며 실제 인물이 아니에요. 제3자 저작권 없음.
