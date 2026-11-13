@@ -452,3 +452,7 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 .cats .cat:nth-child(4) .ci{background:#fde8ec}.cats .cat:nth-child(4) .ci svg{stroke:#e5385b}
 .cats .cat:nth-child(5) .ci{background:#efeaff}.cats .cat:nth-child(5) .ci svg{stroke:#7c6ff2}
 .cats .cat .ci{box-shadow:none}
+.city .spots{margin:12px 0 0;padding:0;list-style:none;border-top:1px solid var(--line);padding-top:10px}
+.city .spots li{margin:0 0 8px;font-size:13px;line-height:1.5}
+.city .spots li b{display:inline;font-size:13px;font-weight:600}
+.city .spots li span{display:block;color:var(--mute)}
