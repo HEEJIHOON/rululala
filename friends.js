@@ -178,7 +178,10 @@ try{const q0=new URLSearchParams(location.search).get('q');if(q0)$('#q').value=q
 $('#q').addEventListener('input',render);
 ['city','tag','min','sort','ver'].forEach(i=>$('#'+i).addEventListener('change',render));
 $('#grid').innerHTML='<div class="empty">불러오는 중…</div>';
-authReady.then(()=>{ready=true;showMe();render()});
+// 홈의 '질문으로 시작하기'에서 넘어온 질문 초안을 데모 채팅 입력칸에 채워 줘요. 보내기는 사용자가 직접 눌러야 해요.
+function openAsk(){let a=null;try{a=JSON.parse(sessionStorage.getItem('rululala_ask'));sessionStorage.removeItem('rululala_ask')}catch(e){return}
+  if(!a||!isStr(a.pid)||!isStr(a.text)||!find(a.pid))return;chat(a.pid);const i=$('#ci');if(i){i.value=a.text.slice(0,500);i.focus()}}
+authReady.then(()=>{ready=true;showMe();render();openAsk()});
 loadProfile().then(showMe);
 // 로그인 상태일 때만 실제 가입자를 가져와요. 비로그인이면 loadMembers가 아무 요청도 보내지 않아요.
 loadMembers().then(()=>{if(ready)renderMembers()});
