@@ -42,6 +42,26 @@
 - `assets/places/8-honolulu.jpg` — 와이키키 해변 (호놀룰루, 여행지 목록). 사진: Frank Schulenburg, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Waikiki_Beach_(2024)-L1004709.jpg
 - `assets/places/9-guam.jpg` — 두 연인의 절벽 (괌, 여행지 목록). 사진: Eddy23, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Puntan_Dos_Amantes_(Two_Lovers_Point)_in_Guam_in_June_2017.jpg
 - `assets/places/10-danang.jpg` — 용다리 (다낭, 여행지 목록). 사진: Supanut Arunoprayote, CC BY 4.0. 원본: https://commons.wikimedia.org/wiki/File:Da_Nang_Dragon_Bridge_(II).jpg
+- `assets/places/17-osaka.jpg` — 오사카 성 (오사카, 여행지 목록). 사진: 663highland, CC BY 2.5. 원본: https://commons.wikimedia.org/wiki/File:Osaka_Castle_02bs3200.jpg
+- `assets/places/9-fukuoka.jpg` — 후쿠오카 타워 (후쿠오카, 여행지 목록). 사진: Hirho, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:View_of_Fukuoka_Tower_from_Seaside_Momochi_Seaside_Park_area_around_902-1_Momochihama-2-ch%C5%8Dme_Sawara-ku_Fukuoka_City_20221213.jpg
+- `assets/places/7-chiangmai.jpg` — 도이수텝 사원 (치앙마이, 여행지 목록). 사진: ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส มากคล้าย, CC BY 3.0. 원본: https://commons.wikimedia.org/wiki/File:Phra_That_Doi_Suthep_01.jpg
+- `assets/places/10-hanoi.jpg` — 호안끼엠 호수 (하노이, 여행지 목록). 사진: P. Hughes, CC BY 4.0. 원본: https://commons.wikimedia.org/wiki/File:Hanoi_-_Turtle_Tower_(Th%C3%A1p_R%C3%B9a),_Ho%C3%A0n_Ki%E1%BA%BFm_Lake.jpg
+- `assets/places/19-taipei.jpg` — 타이베이 101 (타이베이, 여행지 목록). 사진: CEphoto, Uwe Aranas, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg
+- `assets/places/2-bali.jpg` — 따나 롯 사원 (발리, 여행지 목록). 사진: Jakub Hałun, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Tanah_Lot,_Bali,_Indonesia,_20220827_1008_1159.jpg
+- `assets/places/3-barcelona.jpg` — 사그라다 파밀리아 (바르셀로나, 여행지 목록). 사진: Didier Descouens, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Barcelona_-_Exterior_of_the_Apse_of_the_Sagrada_Fam%C3%ADlia_-_Western_exposure.jpg
+- `assets/places/4-berlin.jpg` — 브란덴부르크 문 (베를린, 여행지 목록). 사진: Thomas Wolf, www.foto-tw.de, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg
+- `assets/places/18-prague.jpg` — 카를교 (프라하, 여행지 목록). 사진: DXR, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:North_view_of_Charles_Bridge_from_M%C3%A1nes%C5%AFv_most,_Prague_20160808_1.jpg
+- `assets/places/13-lisbon.jpg` — 벨렝 탑 (리스본, 여행지 목록). 사진: Berthold Werner, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Lisbon_Torre_de_Bel%C3%A9m_BW_2018-10-03_16-33-21.jpg
+- `assets/places/12-la.jpg` — 할리우드 사인 (로스앤젤레스, 여행지 목록). 사진: Thomas Wolf, www.foto-tw.de, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Hollywood_Sign.jpg
+- `assets/places/20-vancouver.jpg` — 밴쿠버 시내 (밴쿠버, 여행지 목록). 사진: KimonBerlin, CC BY-SA 2.0. 원본: https://commons.wikimedia.org/wiki/File:Downtown_Vancouver_skyline_(2288733207).jpg
+- `assets/places/16-mexico.jpg` — 벨라스 아르테스 궁전 (멕시코시티, 여행지 목록). 사진: Jeses, CC BY-SA 2.5. 원본: https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg
+- `assets/places/5-buenosaires.jpg` — 오벨리스크 (부에노스아이레스, 여행지 목록). 사진: Horacio Cambeiro, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Obelisco_de_Buenos_Aires_visto_desde_Avenida_9_de_Julio_y_Lavalle.jpg
+- `assets/places/15-melbourne.jpg` — 플린더스 스트리트 역 (멜버른, 여행지 목록). 사진: Dietmar Rabich, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Melbourne_(AU),_Flinders_Street_Railway_Station_--_2019_--_202623.jpg
+- `assets/places/1-auckland.jpg` — 스카이 타워 (오클랜드, 여행지 목록). 사진: Marco Klapper, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Auckland_skyline_(24045221962).jpg
+- `assets/places/8-dubai.jpg` — 부르즈 칼리파 (두바이, 여행지 목록). 사진: Laika ac, CC BY-SA 2.0. 원본: https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(16260269606).jpg
+- `assets/places/11-istanbul.jpg` — 아야 소피아 (이스탄불, 여행지 목록). 사진: Arild Vågen, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg
+- `assets/places/14-marrakech.jpg` — 제마 엘프나 광장 (마라케시, 여행지 목록). 사진: Herokk, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Jemaa_el-Fnaa_Marrakech_at_sunset.jpg
+- `assets/places/6-capetown.jpg` — 테이블 마운틴 (케이프타운, 여행지 목록). 사진: South African Tourism from South Africa, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Table_Mountain_from_Blouberg,_South_Africa_(4028515275).jpg
 - `assets/stays/14-okura.jpg` — 더 오쿠라 도쿄 (도쿄 미나토구, 추천 숙소). 사진: 江戸村のとくぞう, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Hotel_Okura_Tokyo_190912a1.jpg
 - `assets/stays/7-gracery.jpg` — 호텔 그레이서리 신주쿠 (도쿄 신주쿠, 추천 숙소). 사진: Another Believer, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Hotel_Gracery_in_Shinjuku,_Tokyo,_2019_-_015.jpg
 - `assets/stays/4-crosshotel.jpg` — 크로스 호텔 오사카 (오사카 신사이바시, 추천 숙소). 사진: Mr.ちゅらさん, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Cross_Hotel_Namba.jpg
