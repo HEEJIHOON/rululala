@@ -458,12 +458,12 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 
 /* ===== 색 조합 (홈 화면만: 라벤더 바탕 + 보라 기본 + 핫핑크 포인트) - 색만 바꿨고 레이아웃·글꼴·간격은 그대로예요 ===== */
 body.home{
-  --bg:#f1ecfd;
+  --bg:#ece3ff;
   --surface-hover:#f7f3ff;
   --grad-soft:#ebe4fb;
   --line:#e0d7f6;
   --line-hover:#bfb0ec;
-  --mute:#6f6a80;
+  --mute:#5e5873;
   --hot:#e0197f;
   --hot-strong:#c4136b;
   --deep:#241a47;
@@ -492,3 +492,4 @@ body.home .hsearch button:hover{background:var(--hot-strong)}
 @media (max-width:900px){.friends-row .fp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.friends-row .fp-grid{grid-template-columns:minmax(0,1fr);gap:14px}.friends-row .fp{flex-basis:auto}}
 .friends-row .demo-note{margin:-10px 0 16px;color:var(--mute);font-size:13px;line-height:1.5}
+body.home{background:linear-gradient(180deg,#e9deff 0%,#f1e6ff 38%,#fbe6f2 100%) no-repeat}
