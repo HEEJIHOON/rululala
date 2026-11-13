@@ -42,3 +42,24 @@
 - `assets/places/8-honolulu.jpg` — 와이키키 해변 (호놀룰루, 여행지 목록). 사진: Frank Schulenburg, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Waikiki_Beach_(2024)-L1004709.jpg
 - `assets/places/9-guam.jpg` — 두 연인의 절벽 (괌, 여행지 목록). 사진: Eddy23, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Puntan_Dos_Amantes_(Two_Lovers_Point)_in_Guam_in_June_2017.jpg
 - `assets/places/10-danang.jpg` — 용다리 (다낭, 여행지 목록). 사진: Supanut Arunoprayote, CC BY 4.0. 원본: https://commons.wikimedia.org/wiki/File:Da_Nang_Dragon_Bridge_(II).jpg
+- `assets/stays/14-okura.jpg` — 더 오쿠라 도쿄 (도쿄 미나토구, 추천 숙소). 사진: 江戸村のとくぞう, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Hotel_Okura_Tokyo_190912a1.jpg
+- `assets/stays/7-gracery.jpg` — 호텔 그레이서리 신주쿠 (도쿄 신주쿠, 추천 숙소). 사진: Another Believer, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Hotel_Gracery_in_Shinjuku,_Tokyo,_2019_-_015.jpg
+- `assets/stays/4-crosshotel.jpg` — 크로스 호텔 오사카 (오사카 신사이바시, 추천 숙소). 사진: Mr.ちゅらさん, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Cross_Hotel_Namba.jpg
+- `assets/stays/17-peninsula.jpg` — 더 페닌슐라 방콕 (방콕 짜오프라야 강변, 추천 숙소). 사진: Bigcitydata, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:The_Peninsula_Hotel_Bangkok.jpg
+- `assets/stays/12-mixx.jpg` — 더 믹스 호스텔 (방콕 카오산 지역, 추천 숙소). 사진: Fuwuyuan, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:The_MIXX_Hostel_Khaosan.jpg
+- `assets/stays/10-mandarin.jpg` — 만다린 오리엔탈 방콕 (방콕 짜오프라야 강변, 추천 숙소). 사진: Chainwit., CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Mandarin_Oriental_Bangkok_Bang_Rak.jpg
+- `assets/stays/11-metropole.jpg` — 소피텔 레전드 메트로폴 하노이 (하노이 호안끼엠, 추천 숙소). 사진: Jmouritz127, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Hotel_Metropole_Hanoi_at_night.JPG
+- `assets/stays/8-icdanang.jpg` — 인터컨티넨탈 다낭 선 페닌슐라 리조트 (다낭 선짜 반도, 추천 숙소). 사진: Jcsantos85, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:InterContinental-Danang-Sun-Peninsula-Resort-2026-05-03-5.jpg
+- `assets/stays/13-novotel.jpg` — 노보텔 다낭 프리미어 한 리버 (다낭 한강변, 추천 숙소). 사진: Tú Hồ, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Novotel_Danang_Premier_Han_River_Night_View.jpg
+- `assets/stays/9-lutetia.jpg` — 만다린 오리엔탈 뤼테시아 (파리 6구, 추천 숙소). 사진: Lettucecup, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Lutetia_by_night.jpg
+- `assets/stays/3-crillon.jpg` — 오텔 드 크리옹 (파리 콩코르드 광장, 추천 숙소). 사진: Patrick Nouhailler, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_Crillon_at_night_(142).jpg
+- `assets/stays/6-genparis.jpg` — 제너레이터 파리 (파리 10구, 추천 숙소). 사진: GeneratorWiki, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Gen_Paris_37_RGB_low.jpg
+- `assets/stays/19-savoy.jpg` — 더 사보이 (런던 스트랜드, 추천 숙소). 사진: Amber Gowens Hirschberg, CC BY-SA 2.0. 원본: https://commons.wikimedia.org/wiki/File:Hotel_Savoy_At_Night.jpg
+- `assets/stays/18-ritz.jpg` — 더 리츠 런던 (런던 피카딜리, 추천 숙소). 사진: traveljunction, CC BY-SA 2.0. 원본: https://commons.wikimedia.org/wiki/File:The_Ritz_Hotel,_London_at_Christmas_(16395353467).jpg
+- `assets/stays/5-genlondon.jpg` — 제너레이터 런던 킹스크로스 (런던 킹스크로스, 추천 숙소). 사진: Eden, Janine and Jim, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Generator_37_Tavistock_Place_2025-03-08.jpg
+- `assets/stays/2-chelsea.jpg` — 호텔 첼시 (뉴욕 첼시, 추천 숙소). 사진: Summermother, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Hotel_Chelsea_Night_April_2024.jpg
+- `assets/stays/20-standard.jpg` — 더 스탠다드, 하이라인 (뉴욕 미트패킹 디스트릭트, 추천 숙소). 사진: Jim.henderson, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Standard_Hotel_nite_fr_High_Line_jeh.jpg
+- `assets/stays/21-yotel.jpg` — 요텔 뉴욕 타임스스퀘어 (뉴욕 헬스키친, 추천 숙소). 사진: User:Jeremy Page, Public domain. 원본: https://commons.wikimedia.org/wiki/File:YOTEL_New_York_2018-04-14.jpg
+- `assets/stays/16-parkhyatt.jpg` — 파크 하얏트 시드니 (시드니 더 록스, 추천 숙소). 사진: Ymblanter, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_The_Rocks_Park_Hyatt_Sydney_seen_from_the_northeast.jpg
+- `assets/stays/1-centralyha.jpg` — 시드니 센트럴 YHA (시드니 센트럴, 추천 숙소). 사진: Backpackingmate, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_Central_YHA_exterior_(edited).jpg
+- `assets/stays/15-palisade.jpg` — 호텔 팰리세이드 (시드니 밀러스 포인트, 추천 숙소). 사진: Mick Stanic (SplaTT), CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:The_Palisade_Hotel,_Millers_Point.jpg
