@@ -50,6 +50,12 @@ if (regionTabs && cityBox) {
   setupTabs(regionTabs, cityBox, "region", REGIONS.map((r) => r.name), (i) => {
     cityBox.innerHTML = REGIONS[i].cities
       .map(([city, country]) => {
+        const sp = typeof SPOTS !== "undefined" ? SPOTS[city] : null;
+        if (sp) {
+          return `<div class="city has-photo has-spots"><div class="cph"><img src="${sp.img}" alt="${sp.alt}" loading="lazy"></div><b>${city}</b><small>${country}</small><ul class="spots">${sp.spots
+            .map(([n, d]) => `<li><b>${n}</b><span>${d}</span></li>`)
+            .join("")}</ul></div>`;
+        }
         const p = typeof PARKS !== "undefined" ? PARKS[country] : null;
         return `<div class="city${p ? " has-photo" : ""}">${
           p ? `<div class="cph"><img src="${p.img}" alt="${p.park} 사진" loading="lazy"></div>` : ""
