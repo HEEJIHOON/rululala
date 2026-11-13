@@ -562,15 +562,15 @@ body.mint .safe.soon li::before{background:#e8ecea;color:#2b2f2d}
 .ask-none{display:block;font-size:15px}
 .ask-note a{color:var(--main-color-strong)}
 
-/* ask: bright mint refresh */
-body.mint .ask{background:linear-gradient(135deg,#fff 0%,#f1fffa 55%,#d9fbef 100%);border:1px solid #bff0de;box-shadow:0 10px 30px rgba(18,208,160,.14)}
+/* ask: soft mint - 채도를 낮추고 흰색 비중을 늘린 버전 */
+body.mint .ask{background:linear-gradient(135deg,#fff 0%,#f9fffc 55%,#eff9f5 100%);border:1px solid #e2f4ed;box-shadow:0 8px 24px rgba(18,208,160,.07)}
 body.mint .ask h2{font-size:24px;letter-spacing:-.02em}
 body.mint .ask-step>span{color:#111;font-weight:700}
-body.mint .ask-chip{border:1.5px solid #bff0de;background:#fff;color:#111;font-weight:600;transition:transform .12s,background .12s,border-color .12s}
-body.mint .ask-chip:hover{border-color:#12d0a0;background:#eafff7;transform:translateY(-1px)}
-body.mint .ask-chip[aria-pressed="true"]{border-color:#12d0a0;background:#12d0a0;color:#06261d;box-shadow:0 4px 12px rgba(18,208,160,.35)}
-body.mint .ask-card{background:#fff;border:1.5px solid #bff0de;box-shadow:0 6px 20px rgba(18,208,160,.12)}
-body.mint .ask-tag{background:#d9fbef;color:#06261d}
-body.mint .ask textarea{border-color:#bff0de;background:#f8fffc}
-body.mint .ask textarea:focus{outline:2px solid #12d0a0;outline-offset:1px}
+body.mint .ask-chip{border:1.5px solid #e2f4ed;background:#fff;color:#111;font-weight:600;transition:transform .12s,background .12s,border-color .12s}
+body.mint .ask-chip:hover{border-color:#aee7d5;background:#f5fcfa;transform:translateY(-1px)}
+body.mint .ask-chip[aria-pressed="true"]{border-color:#aee7d5;background:#e6f7f1;color:#0d3b2e;box-shadow:0 3px 10px rgba(18,208,160,.10)}
+body.mint .ask-card{background:#fff;border:1.5px solid #e2f4ed;box-shadow:0 4px 16px rgba(18,208,160,.06)}
+body.mint .ask-tag{background:#f0f9f5;color:#155f4c}
+body.mint .ask textarea{border-color:#e2f4ed;background:#fcfffd}
+body.mint .ask textarea:focus{outline:2px solid #aee7d5;outline-offset:1px}
 body.mint .ask-who b{font-size:17px}
