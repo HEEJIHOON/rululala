@@ -457,22 +457,22 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 /* ===== [미리보기] 홈 화면만: 흰 바탕 + 민트 그린 포인트 - 색만 바꿨고 레이아웃·글꼴·간격은 그대로예요 ===== */
 body.mint{
   --bg:#ffffff;
-  --main-color:#0a7f69;
-  --main-color-strong:#066a58;
-  --main-color-soft:#e3f6f0;
-  --brand:#0a7f69;
-  --brand-soft:#e3f6f0;
-  --pri:#0a7f69;
-  --grad:#0a7f69;
-  --shadow-violet:0 4px 24px rgba(10,127,105,.30);
+  --main-color:#111111;
+  --main-color-strong:#333333;
+  --main-color-soft:#eef1f0;
+  --brand:#111111;
+  --brand-soft:#eef1f0;
+  --pri:#111111;
+  --grad:#111111;
+  --shadow-violet:0 4px 24px rgba(0,0,0,.22);
   --surface-hover:#f1faf7;
   --grad-soft:#e3f6f0;
   --line:#d5ebe4;
   --line-hover:#8fd1bf;
   --mute:#55655f;
-  --hot:#0a7f69;
-  --hot-strong:#066a58;
-  --deep:#0d2f29;
+  --hot:#111111;
+  --hot-strong:#000000;
+  --deep:#111111;
   --shadow-sm:0 2px 10px rgba(10,127,105,.10);
   --shadow:0 4px 8px -1px rgba(10,127,105,.14),0 2px 4px -2px rgba(10,127,105,.10);
 }
@@ -485,7 +485,7 @@ body.mint .banner-cta{background:var(--hot)}
 body.mint .tb-search button{background:var(--hot)}
 body.mint .hsearch,body.mint .tb-search{border-color:var(--line)}
 body.mint .safe li::before{background:var(--main-color-strong)}
-body.mint .fcol a,body.mint footer{color:#b5d6cd}
+body.mint .fcol a,body.mint footer{color:#b9b9b9}
 body.mint .fcol a:hover{color:#fff}
 body.mint .stc::before{background:#d9f3ea}
 body.mint .stc:nth-child(3n+2)::before{background:#c9efe3}
