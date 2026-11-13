@@ -19,8 +19,8 @@ let authState = "pending"; // pending | in | out | error
 
 // 8개 페이지가 공유하는 내비게이션과 푸터는 여기서 넣어요. 메뉴·푸터를 고칠 때 이 파일만 고치면 돼요.
 const currentPage = location.pathname.split("/").pop() || "index.html";
-// 같은 민트 그라데이션 배경을 쓰는 페이지 (배경만 맞춰요)
-if (["friends.html", "world.html", "map.html", "stay.html"].indexOf(currentPage) >= 0) document.body.classList.add("mint");
+// 모든 페이지가 같은 민트 테마(배경·포인트 색·레일·푸터)를 써요
+if (document.body && document.body.classList) document.body.classList.add("mint");
 const railHTML = `<nav class="rail" aria-label="페이지 이동">
   <a class="rail-logo" href="index.html" aria-label="rululala 홈">r</a>
   <a class="ri" href="index.html" aria-label="홈" title="홈"><svg viewBox="0 0 24 24"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/></svg><span class="rl">홈</span></a>
@@ -33,7 +33,7 @@ const railHTML = `<nav class="rail" aria-label="페이지 이동">
 </nav>`;
 const footHTML = `<footer><div class="w">
   <div class="fcols">
-    <div class="fcol"><div class="flogo">rululala<i>.</i></div><p>여행지에서 만나는 동네 친구.<br>rululala은 준비 중이에요.</p></div>
+    <div class="fcol"><div class="flogo"><img src="assets/wordmark-mint.svg" alt="rululala"></div><p>여행지에서 만나는 동네 친구.<br>rululala은 준비 중이에요.</p></div>
     <div class="fcol"><b>메뉴</b><a href="index.html">홈</a><a href="friends.html">친구 찾기</a><a href="world.html">도시</a><a href="map.html">지도</a><a href="stay.html">숙소</a><a href="safe.html">안전</a></div>
     <div class="fcol"><b>안내</b><a href="safe.html">안전 수칙</a><a href="credits.html">사진 크레딧</a><a href="login.html" id="foot-auth">로그인</a><a href="mypage.html">내 정보</a></div>
   </div>
