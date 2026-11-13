@@ -492,3 +492,4 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 .friends-row .fp{flex:none}
 @media (max-width:900px){.friends-row .fp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.friends-row .fp-grid{grid-template-columns:minmax(0,1fr);gap:14px}.friends-row .fp{flex-basis:auto}}
+.friends-row .demo-note{margin:-10px 0 16px;color:var(--mute);font-size:13px;line-height:1.5}
