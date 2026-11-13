@@ -28,3 +28,7 @@
 - `assets/night/2-paris.jpg` — 에펠탑과 센강 노을 (프랑스 파리, 홈 도시 슬라이더). 사진: Getfunky Paris, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg
 - `assets/night/3-bangkok.jpg` — 왓 아룬 야경 (태국 방콕, 홈 도시 슬라이더). 사진: Radek Kucharski, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Wat_Arun_at_night.jpg
 - `assets/night/4-newyork.jpg` — 브루클린 브리지와 맨해튼 야경 (미국 뉴욕, 홈 도시 슬라이더). 사진: Rhododendrites, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge,_Manhattan_at_night_1.jpg
+- `assets/night/1-singapore.jpg` — 싱가포르 마리나 베이 야경 (싱가포르, 홈 도시 슬라이더). 사진: Basile Morin, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Skylines_of_the_Central_Business_District_at_night_in_Singapore.jpg
+- `assets/night/2-london.jpg` — 타워 브리지 야경 (영국 런던, 홈 도시 슬라이더). 사진: Martin Falbisoner, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Tower_Bridge_at_Night.JPG
+- `assets/night/3-sydney.jpg` — 오페라 하우스와 하버 브리지 노을 (호주 시드니, 홈 도시 슬라이더). 사진: Benh LIEU SONG, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_2019-06-21.jpg
+- `assets/night/4-rome.jpg` — 콜로세움 야경 (이탈리아 로마, 홈 도시 슬라이더). 사진: Ank Kumar, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Colosseum_exterior_at_night,_Rome,_Italy_(Ank_Kumar)_07.jpg
