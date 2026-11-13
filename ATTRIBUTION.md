@@ -32,3 +32,13 @@
 - `assets/night/2-london.jpg` — 타워 브리지 야경 (영국 런던, 홈 도시 슬라이더). 사진: Martin Falbisoner, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Tower_Bridge_at_Night.JPG
 - `assets/night/3-sydney.jpg` — 오페라 하우스와 하버 브리지 노을 (호주 시드니, 홈 도시 슬라이더). 사진: Benh LIEU SONG, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_2019-06-21.jpg
 - `assets/night/4-rome.jpg` — 콜로세움 야경 (이탈리아 로마, 홈 도시 슬라이더). 사진: Ank Kumar, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Colosseum_exterior_at_night,_Rome,_Italy_(Ank_Kumar)_07.jpg
+- `assets/places/1-seoul.jpg` — 광화문 · 경복궁 (서울, 여행지 목록). 사진: Richard Mortel, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Gyeongbokgung_Palace,_Seoul,_1395_(2)_(26258824137).jpg
+- `assets/places/2-kyoto.jpg` — 후시미 이나리 신사 (교토, 여행지 목록). 사진: Balon Greyjoy, CC0. 원본: https://commons.wikimedia.org/wiki/File:20181110_Fushimi_Inari_Torii_12.jpg
+- `assets/places/3-kl.jpg` — 페트로나스 트윈 타워 (쿠알라룸푸르, 여행지 목록). 사진: Vyacheslav Argenberg, CC BY 4.0. 원본: https://commons.wikimedia.org/wiki/File:Kuala_Lumpur,_Malaysia,_Petronas_Towers_at_night.jpg
+- `assets/places/4-athens.jpg` — 아크로폴리스 (아테네, 여행지 목록). 사진: Jebulon, CC0. 원본: https://commons.wikimedia.org/wiki/File:Acropolis_Parthenon_Athens_Greece.jpg
+- `assets/places/5-amsterdam.jpg` — 헤렌흐라흐트 운하 (암스테르담, 여행지 목록). 사진: Anne Dirkse, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Herengracht,_Amsterdam_in_the_Blue_Hour.jpg
+- `assets/places/6-rio.jpg` — 코르코바도와 보타포구 만 (리우데자네이루, 여행지 목록). 사진: Wilfredor, CC0. 원본: https://commons.wikimedia.org/wiki/File:Botafogo_Bay_and_Corcovado_viewed_from_Sugarloaf_Mountain,_Rio_de_Janeiro,_Brazil.jpg
+- `assets/places/7-cusco.jpg` — 마추픽추 (쿠스코, 여행지 목록). 사진: Martin St-Amant, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:99_-_Machu_Picchu_-_Juin_2009.edit3.jpg
+- `assets/places/8-honolulu.jpg` — 와이키키 해변 (호놀룰루, 여행지 목록). 사진: Frank Schulenburg, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Waikiki_Beach_(2024)-L1004709.jpg
+- `assets/places/9-guam.jpg` — 두 연인의 절벽 (괌, 여행지 목록). 사진: Eddy23, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Puntan_Dos_Amantes_(Two_Lovers_Point)_in_Guam_in_June_2017.jpg
+- `assets/places/10-danang.jpg` — 용다리 (다낭, 여행지 목록). 사진: Supanut Arunoprayote, CC BY 4.0. 원본: https://commons.wikimedia.org/wiki/File:Da_Nang_Dragon_Bridge_(II).jpg
