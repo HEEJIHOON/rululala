@@ -19,6 +19,8 @@ let authState = "pending"; // pending | in | out | error
 
 // 8개 페이지가 공유하는 내비게이션과 푸터는 여기서 넣어요. 메뉴·푸터를 고칠 때 이 파일만 고치면 돼요.
 const currentPage = location.pathname.split("/").pop() || "index.html";
+// 같은 민트 그라데이션 배경을 쓰는 페이지 (배경만 맞춰요)
+if (["friends.html", "world.html", "map.html", "stay.html"].indexOf(currentPage) >= 0) document.body.classList.add("mint");
 const railHTML = `<nav class="rail" aria-label="페이지 이동">
   <a class="rail-logo" href="index.html" aria-label="rululala 홈">r</a>
   <a class="ri" href="index.html" aria-label="홈" title="홈"><svg viewBox="0 0 24 24"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/></svg><span class="rl">홈</span></a>
