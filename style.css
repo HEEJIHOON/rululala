@@ -491,7 +491,7 @@ body.home .hsearch button:hover{background:var(--hot-strong)}
 @media (max-width:900px){.friends-row .fp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.friends-row .fp-grid{grid-template-columns:minmax(0,1fr);gap:14px}.friends-row .fp{flex-basis:auto}}
 .friends-row .demo-note{margin:-10px 0 16px;color:var(--mute);font-size:13px;line-height:1.5}
-body.home{background:radial-gradient(1100px 700px at 50% 38%,rgba(72,205,140,.55),rgba(72,205,140,.22) 45%,transparent 72%),radial-gradient(700px 520px at 6% 8%,rgba(120,225,175,.38),transparent 70%),radial-gradient(800px 560px at 96% 70%,rgba(90,215,160,.34),transparent 70%),linear-gradient(180deg,#e9faf2 0%,#f4fcf8 55%,#fff 100%) no-repeat}
+body.home,body.mint{background:radial-gradient(1100px 700px at 50% 38%,rgba(72,205,140,.55),rgba(72,205,140,.22) 45%,transparent 72%),radial-gradient(700px 520px at 6% 8%,rgba(120,225,175,.38),transparent 70%),radial-gradient(800px 560px at 96% 70%,rgba(90,215,160,.34),transparent 70%),linear-gradient(180deg,#e9faf2 0%,#f4fcf8 55%,#fff 100%) no-repeat}
 .sr-h{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 body.home .cats .cat .ci{background:#e1f5ee}body.home .cats .cat .ci svg{stroke:#0a7f69}
 
@@ -509,3 +509,19 @@ body.home .fnote{font-size:14px}
 body.home .fcol a,body.home .fcol b{font-size:15px}
 body.home .hsearch input,body.home .tb-search input{font-size:16px}
 @media (max-width:640px){body.home .hsearch input,body.home .tb-search input{font-size:14px}}
+
+/* ===== 홈 개편 2차: 로고·검색·사진 크게, 여백 줄임, 샘플 얼굴 ===== */
+body.home .w{max-width:1480px;padding-left:18px;padding-right:18px}
+body.home .topbar-in{gap:20px;padding-top:12px;padding-bottom:12px}
+body.home .tb-logo img{height:46px}
+body.home .tb-search{max-width:860px;padding:6px 6px 6px 24px;margin-left:12px}
+body.home .tb-search input{font-size:18px;min-height:44px}
+body.home .tb-search button{width:48px;height:48px}
+body.home .hero-band{padding-top:14px}
+body.home .slide{height:clamp(280px,46vw,600px)}
+body.home .strack{gap:12px}
+body.home .rail-logo{color:#12d0a0}
+body.home .rail-logo::after{color:#12d0a0}
+.fav img,.av img,.avimg{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.fp .fav,.av{overflow:hidden}
+@media (max-width:640px){body.home .tb-logo img{height:38px}body.home .w{padding-left:14px;padding-right:14px}body.home .tb-search input{font-size:15px}body.home .tb-search{margin-left:0}body.home .slide{height:clamp(260px,70vw,380px)}}
