@@ -539,3 +539,4 @@ body.home .cats .cat .ci{font-size:30px;line-height:1}
 
 .flogo{display:inline-flex;align-items:center;background:#fff;border-radius:14px;padding:8px 14px}
 .flogo img{display:block;height:26px;width:auto}
+body.mint .safe.soon li::before{background:#e8ecea;color:#2b2f2d}
