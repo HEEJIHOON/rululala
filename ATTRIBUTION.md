@@ -63,3 +63,5 @@
 - `assets/stays/16-parkhyatt.jpg` — 파크 하얏트 시드니 (시드니 더 록스, 추천 숙소). 사진: Ymblanter, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_The_Rocks_Park_Hyatt_Sydney_seen_from_the_northeast.jpg
 - `assets/stays/1-centralyha.jpg` — 시드니 센트럴 YHA (시드니 센트럴, 추천 숙소). 사진: Backpackingmate, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_Central_YHA_exterior_(edited).jpg
 - `assets/stays/15-palisade.jpg` — 호텔 팰리세이드 (시드니 밀러스 포인트, 추천 숙소). 사진: Mick Stanic (SplaTT), CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:The_Palisade_Hotel,_Millers_Point.jpg
+- `map.html`, `assets/map/pois.json` — 지도 페이지 장소 데이터. 출처: OpenStreetMap 기여자, ODbL, 2026-11-13 기준 Overpass 수집. 자세한 내용은 `assets/map/README.md`.
+- `assets/vendor/leaflet/` — Leaflet 지도 라이브러리, BSD-2-Clause. 지도 타일은 tile.openstreetmap.org (© OpenStreetMap 기여자).
