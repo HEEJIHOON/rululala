@@ -63,6 +63,20 @@
 - `assets/stays/16-parkhyatt.jpg` — 파크 하얏트 시드니 (시드니 더 록스, 추천 숙소). 사진: Ymblanter, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_The_Rocks_Park_Hyatt_Sydney_seen_from_the_northeast.jpg
 - `assets/stays/1-centralyha.jpg` — 시드니 센트럴 YHA (시드니 센트럴, 추천 숙소). 사진: Backpackingmate, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_Central_YHA_exterior_(edited).jpg
 - `assets/stays/15-palisade.jpg` — 호텔 팰리세이드 (시드니 밀러스 포인트, 추천 숙소). 사진: Mick Stanic (SplaTT), CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:The_Palisade_Hotel,_Millers_Point.jpg
+- `assets/stays/5-imperial.jpg` — 임페리얼 호텔 도쿄 (도쿄 치요다구 우치사이와이초, 추천 숙소). 사진: Kakidai, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Imperial_Hotel_Tokyo.JPG
+- `assets/stays/8-newotani.jpg` — 호텔 뉴오타니 도쿄 (도쿄 치요다구 기오이초, 추천 숙소). 사진: Kakidai, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:2019_Hotel_New_Otani_Tokyo_02.jpg
+- `assets/stays/1-banyan.jpg` — 반얀트리 방콕 (방콕 사톤, 추천 숙소). 사진: Chainwit., CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Thai_Wah_%26_Banyan_Tree_Bangkok_2021_%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%A7%E0%B8%B2_%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%A2%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E.jpg
+- `assets/stays/12-shangribkk.jpg` — 샹그릴라 방콕 (방콕 짜오프라야 강변, 추천 숙소). 사진: Chainwit., CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Shangri-la_Hotel_Bangkok_2019.jpg
+- `assets/stays/2-caravelle.jpg` — 카라벨 사이공 (호치민 1군, 추천 숙소). 사진: BaonguyenCaravelas, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Caravelle_Hotel_Saigon_2013.jpg
+- `assets/stays/10-rex.jpg` — 렉스 호텔 사이공 (호치민 1군, 추천 숙소). 사진: nakashi, CC BY-SA 2.0. 원본: https://commons.wikimedia.org/wiki/File:Rex_Hotel_Saigon_(53853863403).jpg
+- `assets/stays/11-ritzparis.jpg` — 리츠 파리 (파리 방돔 광장, 추천 숙소). 사진: Gzen92, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Place_Vend%C3%B4me_-_H%C3%B4tel_Ritz_(Paris).jpg
+- `assets/stays/7-meurice.jpg` — 르 뫼리스 (파리 리볼리가, 추천 숙소). 사진: Axou, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Meurice_-_Paris.jpg
+- `assets/stays/3-claridges.jpg` — 클라리지스 (런던 메이페어, 추천 숙소). 사진: Quintin Soloviev, CC BY 4.0. 원본: https://commons.wikimedia.org/wiki/File:Claridge%E2%80%99s_Hotel_(London).jpg
+- `assets/stays/4-dorch2.jpg` — 더 도체스터 (런던 파크 레인, 추천 숙소). 사진: LondonHistoryatHome, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Dorchester_Hotel_frontage.jpg
+- `assets/stays/9-plaza.jpg` — 더 플라자 (뉴욕 센트럴파크 사우스, 추천 숙소). 사진: Yarl, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:New_York_-_Manhattan_-_Plaza_Hotel.jpg
+- `assets/stays/14-waldorf20.jpg` — 월도프 아스토리아 뉴욕 (뉴욕 파크 애비뉴, 추천 숙소). 사진: Epicgenius, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Waldorf_Astoria_New_York_Nov_2025_20.jpg
+- `assets/stays/13-shangrisyd.jpg` — 샹그릴라 시드니 (시드니 더 록스, 추천 숙소). 사진: Mitch Ames, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Shangri-La_Hotel,_Sydney.jpg
+- `assets/stays/6-langham.jpg` — 더 랭엄 시드니 (시드니 더 록스, 추천 숙소). 사진: Vanbasten 23, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:The_Langham_Sydney.jpg
 - `map.html`, `assets/map/pois.json` — 지도 페이지 장소 데이터. 출처: OpenStreetMap 기여자, ODbL, 2026-11-13 기준 Overpass 수집. 자세한 내용은 `assets/map/README.md`.
 - `assets/vendor/leaflet/` — Leaflet 지도 라이브러리, BSD-2-Clause. 지도 타일은 tile.openstreetmap.org (© OpenStreetMap 기여자).
 - `assets/people/1-face1.jpg` ~ `6-face6.jpg` — 예시 프로필 얼굴 사진. 이미지 생성 도구로 만든 가상 인물이며 실제 인물이 아니에요. 제3자 저작권 없음.
