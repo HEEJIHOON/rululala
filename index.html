@@ -56,6 +56,15 @@
     <a class="cat" href="friends.html"><span class="ci" aria-hidden="true">💬</span>현지인 채팅</a>
   </div>
 </div></section>
+<section class="band"><div class="w">
+  <div class="ask" id="ask">
+    <h2>그곳에 사는 사람에게 물어보세요</h2>
+    <p class="ask-sub">도시와 궁금한 주제를 고르면 첫 질문을 만들어 드려요. 예시 프로필로 보여주는 미리보기예요.</p>
+    <div class="ask-step"><span>1. 도시</span><div class="ask-chips" data-ask="city"></div></div>
+    <div class="ask-step" hidden><span>2. 궁금한 것</span><div class="ask-chips" data-ask="topic"></div></div>
+    <div data-ask="out"></div>
+  </div>
+</div></section>
 
 <section class="band"><div class="w">
   <a class="band-head" href="stay.html"><h2>추천 숙소</h2><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>
@@ -90,5 +99,6 @@ t.addEventListener("scroll",function(){var best=0,d=1e9;for(var j=0;j<n;j++){var
 t.addEventListener("pointerdown",stop);t.addEventListener("mouseenter",stop);t.addEventListener("mouseleave",start);t.addEventListener("touchend",start);
 start();})();
 </script>
+<script src="flow.js"></script>
 </body>
 </html>
