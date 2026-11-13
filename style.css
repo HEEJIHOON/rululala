@@ -398,6 +398,9 @@ body.home .rail{display:none}
 .tb-search button{display:grid;place-items:center;width:36px;height:36px;padding:0;border:0;border-radius:50%;background:var(--pri);color:#fff;cursor:pointer}
 .tb-search button svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
 .tb-login{font-size:14px;font-weight:500;text-decoration:none;color:var(--ink)}
+.tb-login.tb-in{display:none}
+.in .tb-login.tb-in{display:inline}
+.in .tb-login.tb-out{display:none}
 .tb-menu{display:flex;gap:28px;padding-bottom:10px;font-size:15px;font-weight:500}
 .tb-menu a{padding:6px 0;color:var(--mute);text-decoration:none;border-bottom:2px solid transparent}
 .tb-menu a:hover{color:var(--ink)}
@@ -417,7 +420,7 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 .cat:hover .ci{transform:translateY(-2px)}
 @media (max-width:700px){
   .topbar-in{flex-wrap:wrap;gap:10px}.tb-search{order:3;flex-basis:100%;max-width:none;margin:0}
-  .tb-login{margin-left:auto}.tb-menu{gap:18px;overflow-x:auto;white-space:nowrap}
+  .tb-login.tb-out,.in .tb-login.tb-in{margin-left:auto}.tb-menu{gap:18px;overflow-x:auto;white-space:nowrap}
   .banner{padding:26px 22px;min-height:0}.banner-art{display:none}
 }
 .cat .ci svg{width:26px;height:26px;stroke:var(--ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
