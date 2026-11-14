@@ -613,14 +613,12 @@ body.home .fp-grid a.fp:nth-child(6){rotate:.8deg}
 /* 추천 숙소 마퀴: 홈 맨 위에서 흘러가는 배너 (총 8곳, 화면에는 4곳씩) */
 .stay-marquee{margin-bottom:30px}
 .stay-marquee .band-head{margin-bottom:14px}
-.stmq{overflow:hidden;border-radius:var(--r-lg)}
-.stmq-track{display:flex;width:max-content;animation:stmq-scroll 42s linear infinite}
-.stmq:hover .stmq-track,.stmq:focus-within .stmq-track{animation-play-state:paused}
+.stmq{overflow-x:auto;overflow-y:hidden;border-radius:var(--r-lg);scrollbar-width:none;-ms-overflow-style:none}
+.stmq::-webkit-scrollbar{display:none}
+.stmq-track{display:flex;width:max-content}
 .stmq-set{display:flex;gap:20px;padding-right:20px}
 .stmq .stc{flex:0 0 330px;box-shadow:var(--shadow-sm)}
-@keyframes stmq-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (max-width:1100px){.stmq .stc{flex-basis:280px}}
 @media (max-width:700px){.stmq-set{gap:12px;padding-right:12px}.stmq .stc{flex-basis:210px}}
-@media (prefers-reduced-motion:reduce){.stmq-track{animation:none}.stmq{overflow-x:auto}}
 /* 언어 선택 (홈 상단 로그인 옆) */
 .lang-sel{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:var(--field);color:var(--ink);cursor:pointer}
