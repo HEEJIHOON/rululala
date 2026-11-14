@@ -693,3 +693,32 @@ body.home .fp-grid .fp:nth-child(6){rotate:.8deg}
 .sd-sec h2{font-size:19px;margin:0 0 12px}
 .sd-note{font-size:13px;color:#6b7771;margin-top:18px}
 @media (max-width:800px){.sd-gallery{grid-template-columns:1fr}}
+
+/* 새 기능 소개 카드 */
+.feat{margin:18px 0 6px}
+.feat-h{font-size:20px;font-weight:600;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.feat-badge{font-size:11px;font-weight:600;color:#0caa7d;background:#e6f8f1;border:1px solid #bfeadb;border-radius:999px;padding:3px 10px}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat-card{background:#fff;border:1px solid #e6efe9;border-top:4px solid #12d0a0;border-radius:18px;padding:18px 16px;box-shadow:0 2px 10px rgba(12,60,45,.05)}
+.feat-ic{font-size:24px;display:block;margin-bottom:8px}
+.feat-card b{font-size:16px;font-weight:600}
+.feat-card p{margin:8px 0 0;font-size:13.5px;line-height:1.55;color:#41544c}
+@media(max-width:760px){.feat-grid{grid-template-columns:1fr}}
+/* 채팅 번역 토글 + 하루 코스 카드 */
+.cm-tr{margin-left:auto;font-size:12px;border:1px solid #bfeadb;background:#e6f8f1;color:#0b3d2e;border-radius:999px;padding:5px 12px;cursor:pointer}
+.cm-tr[aria-pressed="true"]{background:#12d0a0;color:#fff;border-color:#12d0a0}
+.tr-line{display:block;margin-top:4px;font-size:12px;color:#5c7368;border-top:1px dashed #cfe4da;padding-top:4px}
+.cmodal:not(.tr-on) .tr-line{display:none}
+.course{max-width:92%}
+.course>b{display:block;margin-bottom:6px}
+.course ol{margin:0;padding:0;list-style:none}
+.course li{font-size:13px;margin:4px 0;line-height:1.5}
+.course li b{color:#0caa7d;margin-right:6px}
+.course a{display:inline-block;margin-top:8px;font-size:12.5px;color:#0caa7d;font-weight:600}
+/* 숙소 동네 친구 매칭 */
+.sd-friends{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.sd-friend{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e6efe9;border-radius:16px;padding:12px 14px;text-decoration:none;color:inherit}
+.sd-friend img{border-radius:50%;object-fit:cover}
+.sd-friend-tx{flex:1;display:flex;flex-direction:column;gap:2px}
+.sd-friend-tx small{color:#5c7368;font-size:12.5px}
+.sd-friend-cta{font-size:12px;font-weight:600;color:#0caa7d;border:1px solid #bfeadb;border-radius:999px;padding:5px 10px;background:#e6f8f1}
