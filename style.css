@@ -588,10 +588,10 @@ html,body,body.mint{background:#ffffff}
 html{background:#fdfcf9 !important}
 body,body.home,body.mint{background:#fdfcf9 url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27240%27%20height%3D%27240%27%3E%3Cfilter%20id%3D%27n%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.7%27%20numOctaves%3D%272%27%20stitchTiles%3D%27stitch%27/%3E%3CfeColorMatrix%20values%3D%270%200%200%200%200.45%20%200%200%200%200%200.42%20%200%200%200%200%200.38%20%200%200%200%200.10%200%27/%3E%3C/filter%3E%3Crect%20width%3D%27240%27%20height%3D%27240%27%20filter%3D%27url%28%23n%29%27/%3E%3C/svg%3E") center/240px 240px repeat fixed !important}
 
-/* 왼쪽 내비 아이콘: 진한 민트 통일, 현재 페이지만 밝은 민트 */
-.ri svg{stroke:#0caa7d !important}
-.ri[aria-current="page"] svg{stroke:#12d0a0 !important}
-.ri[aria-current="page"] .rl{color:#0caa7d !important;font-weight:700 !important}
+/* 왼쪽 내비 아이콘: 검정 통일, 현재 페이지는 굵게 */
+.ri svg{stroke:var(--ink) !important}
+.ri[aria-current="page"] svg{stroke:var(--ink) !important}
+.ri[aria-current="page"] .rl{color:var(--ink) !important;font-weight:700 !important}
 
 /* 현지인 채팅 카드: 민트 포인트 줄 + 흰→연민트 그라데이션 + 사진 민트 링 */
 .fp{background:linear-gradient(180deg,#ffffff 0%,#eef8f2 100%) !important;border:1px solid #d5ebe4 !important;border-top:3px solid #12d0a0 !important;box-shadow:0 10px 24px rgba(18,208,160,.14),0 2px 6px rgba(24,55,45,.07) !important}
