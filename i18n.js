@@ -18,7 +18,7 @@
     [".tb-login.tb-in", "text", "nav_mypage"],
     [".tb-search input", "placeholder", "search_ph"],
     [".friends-row .band-head h2", "text", "h_chat"],
-    [".stay-marquee .band-head h2", "text", "h_stays"],
+    [".stay-marquee .band-head h2 .i18n-stays", "text", "h_stays"],
     ["#home-map .band-head h2", "text", "h_map"],
     [".demo-note", "text", "demo_note"],
     ["#home-map .map-sub", "text", "map_sub"],
