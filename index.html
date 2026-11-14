@@ -80,19 +80,13 @@
 </div></section>
 
 <section class="band"><div class="w">
-  <div class="slider" aria-roledescription="carousel" aria-label="인기 도시">
-    <div class="strack" id="strack">
-      <a class="slide" href="world.html"><img src="assets/night/1-tokyo.jpg" alt="도쿄 타워와 도쿄 야경" style="object-position:50% 40%"><span class="slab"><b>도쿄</b><small>도쿄 타워 · 야경</small></span></a>
-      <a class="slide" href="world.html"><img src="assets/night/2-paris.jpg" alt="센강과 에펠탑의 노을" loading="lazy" style="object-position:50% 55%"><span class="slab"><b>파리</b><small>에펠탑 · 센강 노을</small></span></a>
-      <a class="slide" href="world.html"><img src="assets/night/3-bangkok.jpg" alt="짜오프라야강과 왓 아룬 야경" loading="lazy" style="object-position:50% 45%"><span class="slab"><b>방콕</b><small>왓 아룬 · 짜오프라야강</small></span></a>
-      <a class="slide" href="world.html"><img src="assets/night/4-newyork.jpg" alt="브루클린 브리지와 맨해튼 야경" loading="lazy" style="object-position:50% 40%"><span class="slab"><b>뉴욕</b><small>브루클린 브리지 · 맨해튼 야경</small></span></a>
-      <a class="slide" href="world.html"><img src="assets/night/1-singapore.jpg" alt="싱가포르 마리나 베이 야경" loading="lazy" style="object-position:50% 50%"><span class="slab"><b>싱가포르</b><small>마리나 베이 · 야경</small></span></a>
-      <a class="slide" href="world.html"><img src="assets/night/2-london.jpg" alt="템스강과 타워 브리지의 밤" loading="lazy" style="object-position:50% 50%"><span class="slab"><b>런던</b><small>타워 브리지 · 템스강 야경</small></span></a>
-      <a class="slide" href="world.html"><img src="assets/night/3-sydney.jpg" alt="시드니 오페라 하우스와 하버 브리지의 노을" loading="lazy" style="object-position:50% 55%"><span class="slab"><b>시드니</b><small>오페라 하우스 · 하버 브리지</small></span></a>
-      <a class="slide" href="world.html"><img src="assets/night/4-rome.jpg" alt="밤에 불이 켜진 로마 콜로세움" loading="lazy" style="object-position:50% 40%"><span class="slab"><b>로마</b><small>콜로세움 · 야경</small></span></a>
+  <div class="feat">
+    <h2 class="feat-h">새로 생긴 기능 <span class="feat-badge">예시 화면</span></h2>
+    <div class="feat-grid">
+      <div class="feat-card"><span class="feat-ic" aria-hidden="true">🌐</span><b>채팅 실시간 번역</b><p>현지인 친구와의 대화를 한국어로 바로 번역해 줘요. 위의 현지인 채팅 카드를 눌러 예시 대화에서 '번역 보기'를 켜 보세요.</p></div>
+      <div class="feat-card"><span class="feat-ic" aria-hidden="true">🗺️</span><b>현지인 하루 코스 카드</b><p>현지인 친구가 오전·점심·저녁 동선을 카드로 짜 줘요. 예시 대화 맨 아래에서 하루 코스 카드를 확인해 보세요.</p></div>
+      <div class="feat-card"><span class="feat-ic" aria-hidden="true">🏨</span><b>동네 친구 매칭</b><p>숙소 상세 페이지 아래에서 그 동네에 사는 현지인 친구를 바로 만나고 채팅을 시작할 수 있어요.</p></div>
     </div>
-    <button class="snav sprev" type="button" aria-label="이전 도시"><svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></svg></button>
-    <button class="snav snext" type="button" aria-label="다음 도시"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button>
   </div>
   <div class="cats">
     <a class="cat" href="world.html"><span class="ci" aria-hidden="true">🌏</span>도시</a>
@@ -120,18 +114,7 @@
   </div>
 </div></section>
 
-<script>
-(function(){var t=document.getElementById("strack");if(!t)return;var sl=t.children,n=sl.length,i=0,timer,
-reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
-function go(k){i=(k+n)%n;t.scrollTo({left:sl[i].offsetLeft-t.offsetLeft,behavior:reduce?"auto":"smooth"});}
-function start(){if(reduce)return;stop();timer=setInterval(function(){go(i+1)},4500);}
-function stop(){clearInterval(timer);}
-document.querySelector(".sprev").onclick=function(){go(i-1);start()};
-document.querySelector(".snext").onclick=function(){go(i+1);start()};
-t.addEventListener("scroll",function(){var best=0,d=1e9;for(var j=0;j<n;j++){var x=Math.abs(sl[j].offsetLeft-t.offsetLeft-t.scrollLeft);if(x<d){d=x;best=j}}i=best},{passive:true});
-t.addEventListener("pointerdown",stop);t.addEventListener("mouseenter",stop);t.addEventListener("mouseleave",start);t.addEventListener("touchend",start);
-start();})();
-</script>
+
 <script>
 (function(){var q=document.querySelector(".stmq");if(!q)return;var track=q.querySelector(".stmq-track");if(!track)return;
 if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;
@@ -158,6 +141,7 @@ requestAnimationFrame(tick);})();
       <div class="fav"><img id="cm-img" src="" alt="" width="56" height="56"></div>
       <div><b id="cm-name"></b><span class="meta" id="cm-meta"></span></div>
       <span class="cm-demo">예시 대화</span>
+      <button class="cm-tr" id="cm-tr" type="button" aria-pressed="false">🌐 번역 보기</button>
     </div>
     <div class="cm-log" id="cm-log"></div>
     <p class="cm-note">예시 대화예요. 실제 채팅은 <a href="friends.html">친구 찾기</a>에서 시작할 수 있어요.</p>
@@ -166,26 +150,34 @@ requestAnimationFrame(tick);})();
 <script>
 (function(){
 var CHATS={
-haru:{name:"하루",meta:"도쿄, 일본 · 25세",img:"assets/people/4-locals-1.jpg",alt:"하루 예시 프로필 사진",log:[["them","골목 카페요? 제 단골집 알려드릴게요 😊"],["me","와 감사해요! 사진 찍기도 좋은 곳인가요?"],["them","네! 나카메구로 강변 쪽인데 창가 자리가 최고예요"],["them","평일 오전이 한적해서 추천해요"]]},
-emma:{name:"Emma",meta:"파리, 프랑스 · 26세",img:"assets/people/7-locals-2.jpg",alt:"Emma 예시 프로필 사진",log:[["them","크루아상은 꼭 이 집에서 드셔보세요!"],["me","기대돼요 🥐 줄이 긴 편인가요?"],["them","조금요! 6구 작은 블랑제리인데 아침 8시에 갓 나와요"],["them","그 시간에 맞춰 가면 기다릴 가치가 있어요"]]},
-sophie:{name:"소피",meta:"방콕, 태국 · 24세",img:"assets/people/8-locals-3.jpg",alt:"소피 예시 프로필 사진",log:[["them","야시장은 7시 이후가 진짜예요 🌙"],["me","어디부터 가보면 좋을까요?"],["them","짜뚜짝 주말 시장부터요! 흥정은 웃으면서 반값부터"],["them","다들 정이 많아서 금방 친해져요"]]},
-minjun:{name:"민준",meta:"서울, 대한민국 · 27세",img:"assets/people/9-locals-4.jpg",alt:"민준 예시 프로필 사진",log:[["them","사진 맛집 골목, 같이 가요 📷"],["me","어디예요? 근처에 밥집도 있나요?"],["them","익선동 한옥 골목이요. 노을 질 때가 제일 예뻐요"],["them","골목 안에 제 단골 칼국수집도 있어요!"]]},
-luca:{name:"루카",meta:"로마, 이탈리아 · 28세",img:"assets/people/10-locals-5.jpg",alt:"루카 예시 프로필 사진",log:[["them","관광객 없는 트라토리아 데려갈게요"],["me","오 가격대는 어떤 편이에요?"],["them","트라스테베레 뒷골목인데 현지인 가격 그대로예요"],["them","파스타가 12유로! 두 판도 가능해요"]]},
-lia:{name:"리아",meta:"시드니, 호주 · 26세",img:"assets/people/11-locals-6.jpg",alt:"리아 예시 프로필 사진",log:[["them","브런치 후에 서핑 구경 어때요? 🌊"],["me","좋아요! 서핑 초보도 괜찮을까요?"],["them","물론이죠! 본다이 쪽 카페부터 시작해요"],["them","보드 빌려주는 곳이 바로 옆이에요"]]}
+haru:{name:"하루",meta:"도쿄, 일본 · 25세",img:"assets/people/4-locals-1.jpg",alt:"하루 예시 프로필 사진",log:[["them","골목 카페요? 제 단골집 알려드릴게요 😊","Alley cafes? I'll tell you my favorite spot 😊"],["me","와 감사해요! 사진 찍기도 좋은 곳인가요?"],["them","네! 나카메구로 강변 쪽인데 창가 자리가 최고예요","Yes! It's by the Meguro river, and the window seat is the best"],["them","평일 오전이 한적해서 추천해요","Weekday mornings are quiet, so I recommend going then"]],course:[["오전","나카메구로 강변 산책","사진 찍기 좋은 강변길"],["점심","나카메구로 카페 브런치","제 단골 창가 자리"],["저녁","에비스 가든플레이스","야경이 예쁜 광장"]]},
+emma:{name:"Emma",meta:"파리, 프랑스 · 26세",img:"assets/people/7-locals-2.jpg",alt:"Emma 예시 프로필 사진",log:[["them","크루아상은 꼭 이 집에서 드셔보세요!","You have to try the croissants at this place!"],["me","기대돼요 🥐 줄이 긴 편인가요?"],["them","조금요! 6구 작은 블랑제리인데 아침 8시에 갓 나와요","A little! It's a small bakery in the 6th, fresh out at 8am"],["them","그 시간에 맞춰 가면 기다릴 가치가 있어요","Go at that time - it's worth the wait"]],course:[["오전","6구 블랑제리 아침","8시 갓 구운 크루아상"],["점심","뤽상부르 공원 피크닉","파리 사람들의 점심"],["저녁","생제르맹 골목 와인바","로컬 분위기 그대로"]]},
+sophie:{name:"소피",meta:"방콕, 태국 · 24세",img:"assets/people/8-locals-3.jpg",alt:"소피 예시 프로필 사진",log:[["them","야시장은 7시 이후가 진짜예요 🌙","Night markets get real after 7pm 🌙"],["me","어디부터 가보면 좋을까요?"],["them","짜뚜짝 주말 시장부터요! 흥정은 웃으면서 반값부터","Start at Chatuchak market! Bargain with a smile, from half price"],["them","다들 정이 많아서 금방 친해져요","People are so warm, you'll make friends fast"]],course:[["오전","짜뚜짝 주말 시장","흥정은 웃으면서"],["점심","수상시장 국수","강변에서 먹는 한 그릇"],["저녁","짜오프라야 야시장","7시 이후가 진짜예요"]]},
+minjun:{name:"민준",meta:"서울, 대한민국 · 27세",img:"assets/people/9-locals-4.jpg",alt:"민준 예시 프로필 사진",log:[["them","사진 맛집 골목, 같이 가요 📷","Let's go to the photogenic alleys together 📷"],["me","어디예요? 근처에 밥집도 있나요?"],["them","익선동 한옥 골목이요. 노을 질 때가 제일 예뻐요","Ikseon-dong hanok alley. It's prettiest at sunset"],["them","골목 안에 제 단골 칼국수집도 있어요!","My favorite kalguksu place is right in the alley!"]],course:[["오전","익선동 한옥 골목","노을 질 때가 제일 예뻐요"],["점심","광장시장 칼국수","제 단골집이에요"],["저녁","한강 반포 야경","돗자리 필수"]]},
+luca:{name:"루카",meta:"로마, 이탈리아 · 28세",img:"assets/people/10-locals-5.jpg",alt:"루카 예시 프로필 사진",log:[["them","관광객 없는 트라토리아 데려갈게요","I'll take you to a trattoria with no tourists"],["me","오 가격대는 어떤 편이에요?"],["them","트라스테베레 뒷골목인데 현지인 가격 그대로예요","It's in a Trastevere back alley - local prices"],["them","파스타가 12유로! 두 판도 가능해요","Pasta is 12 euros! Two plates totally possible"]],course:[["오전","트라스테베레 골목 산책","관광객 없는 아침"],["점심","트라토리아 파스타","현지인 가격 12유로"],["저녁","나보나 광장","노을 보며 젤라토"]]},
+lia:{name:"리아",meta:"시드니, 호주 · 26세",img:"assets/people/11-locals-6.jpg",alt:"리아 예시 프로필 사진",log:[["them","브런치 후에 서핑 구경 어때요? 🌊","How about watching surfers after brunch? 🌊"],["me","좋아요! 서핑 초보도 괜찮을까요?"],["them","물론이죠! 본다이 쪽 카페부터 시작해요","Of course! We start at a Bondi cafe"],["them","보드 빌려주는 곳이 바로 옆이에요","The board rental is right next door"]],course:[["오전","본다이 카페 브런치","바다 보며 아침"],["점심","본다이-쿠지 산책로","절벽 위 바닷길"],["저녁","오페라 하우스 야경","하버 브리지 야경"]]}
 };
 var modal=document.getElementById("cmodal");if(!modal)return;
 var log=document.getElementById("cm-log"),img=document.getElementById("cm-img"),
-nm=document.getElementById("cm-name"),meta=document.getElementById("cm-meta");
+nm=document.getElementById("cm-name"),meta=document.getElementById("cm-meta"),
+trBtn=document.getElementById("cm-tr");
 function open(p){var c=CHATS[p];if(!c)return;
 img.src=c.img;img.alt=c.alt;nm.textContent=c.name;meta.textContent=c.meta;
-log.innerHTML=c.log.map(function(m){return '<div class="m '+m[0]+'"></div>'}).join("");
-c.log.forEach(function(m,i){log.children[i].textContent=m[1]});
+var html=c.log.map(function(m){
+var tr=m[2]?'<small class="tr-line">'+m[2].replace(/</g,"&lt;")+'</small>':'';
+return '<div class="m '+m[0]+'">'+m[1].replace(/</g,"&lt;")+tr+'</div>'}).join("");
+if(c.course){html+='<div class="m them course"><b>🗺️ 하루 코스 (예시)</b><ol>'+c.course.map(function(s){
+return '<li><b>'+s[0]+'</b>'+s[1]+' — '+s[2]+'</li>'}).join("")+'</ol><a href="map.html">지도에서 보기</a></div>'}
+log.innerHTML=html;
 modal.hidden=false;document.body.style.overflow="hidden";}
 function close(){modal.hidden=true;document.body.style.overflow="";}
 document.querySelectorAll(".friends-row .fp[data-p]").forEach(function(b){
 b.addEventListener("click",function(){open(b.dataset.p)});});
 modal.querySelectorAll("[data-close]").forEach(function(el){el.addEventListener("click",close)});
 document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!modal.hidden)close()});
+if(trBtn)trBtn.addEventListener("click",function(){var on=modal.classList.toggle("tr-on");
+trBtn.setAttribute("aria-pressed",on?"true":"false");
+trBtn.textContent=on?"🌐 원문 보기":"🌐 번역 보기";});
 })();
 </script>
 </body>
