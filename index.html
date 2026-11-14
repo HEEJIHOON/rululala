@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>rululala | 여행지에서 만나는 동네 친구</title>
 <!-- Pages caches fixed asset URLs. loader.js gives each page load fresh local CSS/JS URLs. -->
-<script src="loader.js" data-scripts="common.js"></script>
-<noscript><link rel="stylesheet" href="style.css"></noscript>
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="map.css">
+<script src="loader.js" data-scripts="common.js,data.js,assets/vendor/leaflet/leaflet.js,map.js"></script>
+<noscript><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="map.css"></noscript>
 </head>
 <body class="home">
 <script>document.body.classList.add("home");</script>
@@ -63,6 +65,17 @@
     <a class="cat" href="friends.html"><span class="ci" aria-hidden="true">💬</span>현지인 채팅</a>
   </div>
 </div></section>
+<section class="band" id="home-map"><div class="w">
+  <a class="band-head" href="map.html"><h2>지도로 보기</h2><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>
+  <p class="map-sub">도시를 고르면 그 도시의 숙소·관광지와 근처에 사는 현지인 친구를 지도에서 볼 수 있어요. 친구 활동 지역 표시는 예시 화면이에요.</p>
+  <div class="map-controls">
+    <select class="map-city" id="map-city" aria-label="도시 선택"></select>
+    <div class="map-cats" id="map-cats" role="group" aria-label="표시할 핀 종류"></div>
+  </div>
+  <div id="map" role="application" aria-label="도시 지도"></div>
+  <p class="map-status" id="map-status" role="status"></p>
+</div></section>
+
 <section class="band"><div class="w">
   <div class="ask" id="ask">
     <h2>그곳에 사는 사람에게 물어보세요</h2>
