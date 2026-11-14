@@ -1,7 +1,7 @@
 # rululala
 
 <p>
-  <img src="assets/wordmark-on-white.png" alt="rululala" height="40">
+  <img src="assets/wordmark-mint-on-white.svg" alt="rululala" height="40">
 </p>
 
 make friends across the world
