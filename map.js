@@ -21,10 +21,9 @@
   };
 
   var CATS = {
-    food: { label: "맛집", color: "#e8743b", glyph: "맛" },
     sight: { label: "관광지", color: "#2f9e6e", glyph: "관" },
     stay: { label: "숙소", color: "#3b7dd8", glyph: "숙" },
-    friend: { label: "친구(예시)", color: "#7c6ff2", glyph: "친" }
+    friend: { label: "현지인 친구(예시)", color: "#7c6ff2", glyph: "친" }
   };
 
   // friends.js의 예시 프로필과 같은 5명이에요. 실제 위치가 아니라 도시 중심 근처의 '활동 지역 예시'로만 표시해요.
@@ -54,7 +53,7 @@
     "마라케시|모로코": "marrakesh", "케이프타운|남아프리카공화국": "capetown", "서울|대한민국": "seoul"
   };
   var currentKey = null;
-  var currentCats = { food: true, sight: true, stay: true, friend: true };
+  var currentCats = { sight: true, stay: true, friend: true };
   var loadToken = 0;
   var snapAll = null;
 
@@ -155,15 +154,14 @@
 
   function classify(tags) {
     if (!tags) return null;
-    if (/^(restaurant|cafe|fast_food)$/.test(tags.amenity || "")) return "food";
     if (/^(hotel|hostel|guest_house)$/.test(tags.tourism || "")) return "stay";
     if (/^(attraction|museum|gallery|viewpoint)$/.test(tags.tourism || "")) return "sight";
     return null;
   }
 
   function renderPois(elements) {
-    ["food", "sight", "stay"].forEach(function (k) { layers[k].clearLayers(); });
-    var counts = { food: 0, sight: 0, stay: 0 };
+    ["sight", "stay"].forEach(function (k) { layers[k].clearLayers(); });
+    var counts = { sight: 0, stay: 0 };
     var seen = {};
     (elements || []).forEach(function (el) {
       var t = el.tags || {};
@@ -190,7 +188,7 @@
     renderFriends();
     if (!force && cache[key]) {
       var cc = renderPois(cache[key]);
-      setStatus(key.split("|")[0] + " · 맛집 " + cc.food + "곳, 관광지 " + cc.sight + "곳, 숙소 " + cc.stay + "곳을 찾았어요.");
+      setStatus(key.split("|")[0] + " · 숙소 " + cc.stay + "곳, 관광지 " + cc.sight + "곳을 찾았어요.");
       return;
     }
     var token = ++loadToken;
@@ -204,7 +202,7 @@
         if (!elements || !elements.length) throw new Error("empty");
         cache[key] = elements;
         var counts = renderPois(elements);
-        setStatus(key.split("|")[0] + " · 맛집 " + counts.food + "곳, 관광지 " + counts.sight + "곳, 숙소 " + counts.stay + "곳을 찾았어요.");
+        setStatus(key.split("|")[0] + " · 숙소 " + counts.stay + "곳, 관광지 " + counts.sight + "곳을 찾았어요.");
       })
       .catch(function () { loadLive(key, c, token); });
   }
@@ -212,7 +210,6 @@
   // 스냅샷이 없을 때 쓰는 실시간 조회예요. 공개 Overpass 서버는 가끔 바빠요. 하나가 실패하면 다음 서버로 넘겨요.
   function loadLive(key, c, token) {
     var q = "[out:json][timeout:15];(" +
-      'node["amenity"~"^(restaurant|cafe|fast_food)$"]["name"](around:3000,' + c[0] + "," + c[1] + ");" +
       'node["tourism"~"^(attraction|museum|gallery|viewpoint)$"]["name"](around:6000,' + c[0] + "," + c[1] + ");" +
       'node["tourism"~"^(hotel|hostel|guest_house)$"]["name"](around:3000,' + c[0] + "," + c[1] + ");" +
       ");out body 150;";
@@ -242,9 +239,9 @@
           if (token !== loadToken) return;
           cache[key] = data.elements || [];
           var counts = renderPois(cache[key]);
-          var total = counts.food + counts.sight + counts.stay;
+          var total = counts.sight + counts.stay;
           setStatus(total
-            ? key.split("|")[0] + " · 맛집 " + counts.food + "곳, 관광지 " + counts.sight + "곳, 숙소 " + counts.stay + "곳을 찾았어요."
+            ? key.split("|")[0] + " · 숙소 " + counts.stay + "곳, 관광지 " + counts.sight + "곳을 찾았어요."
             : "이 도시에서는 아직 장소 데이터를 찾지 못했어요.", !total);
         })
         .catch(function () {
