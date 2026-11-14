@@ -94,7 +94,7 @@
     return L.divIcon({
       className: "mp mp-" + cat,
       html: "<span aria-hidden='true'>" + CATS[cat].glyph + "</span>",
-      iconSize: [26, 26], iconAnchor: [13, 13], popupAnchor: [0, -12]
+      iconSize: [26, 26], iconAnchor: [13, 24], popupAnchor: [0, -21]
     });
   }
 
