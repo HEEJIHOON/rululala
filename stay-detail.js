@@ -9,8 +9,8 @@
   var stays = typeof STAYS !== "undefined" ? STAYS : [];
   stays.forEach(function (g) {
     g.items.forEach(function (it) {
-      var m = it[2].match(/\/(\d+-(.+))\.jpg$/);
-      if (m && m[2] === id) found = { name: it[0], area: it[1], img: it[2], kind: it[3], country: g.country };
+      var m = it[2].match(/\/(?:\d+-)+(.+)\.jpg$/);
+      if (m && m[1] === id) found = { name: it[0], area: it[1], img: it[2], kind: it[3], country: g.country };
     });
   });
 
@@ -24,6 +24,11 @@
     peninsula: { price: "₩490,000~", extra: "assets/night/3-bangkok.jpg", reviews: [["혜진 · 2026.07", "강변 뷰가 압도적이에요. 셔틀보트 타고 밖에 나가는 것도 재밌었어요."], ["Ploy · 2026.05", "수영장에서 보는 짜오프라야강 노을이 기억에 남아요. 조식도 훌륭해요."]] },
     parkhyatt: { price: "₩950,000~", extra: "assets/night/3-sydney.jpg",  reviews: [["지호 · 2026.09", "하버 브리지가 창밖으로 꽉 차게 보여요. 위치만으로 충분했어요."], ["Emma · 2026.06", "미니멀하고 차분한 분위기. 더 록스 지역이라 구시가지 산책이 좋아요."]] },
     icdanang:  { price: "₩620,000~", extra: "assets/places/10-danang.jpg", reviews: [["태윤 · 2026.08", "리조트 자체가 관광지예요. 프라이빗 비치까지 케이블카 타고 내려가요."], ["Mai · 2026.04", "사진보다 실물이 더 좋아요. 쉬러 가기에 최고의 선택이었어요."]] }
+,
+    mbs:       { price: "₩720,000~", extra: "assets/night/1-singapore.jpg", reviews: [["Elena · 2026.09", "옥상 인피니티 풀에서 보는 야경이 정말 압도적이에요. 한 번쯤 꼭 묵어볼 만해요."], ["Kai · 2026.07", "위치도 서비스도 훌륭했어요. 가격대는 있지만 그만한 경험이었습니다."]] },
+    burjalarab:{ price: "₩1,600,000~", extra: "assets/places/8-dubai.jpg", reviews: [["Omar · 2026.10", "돛 모양 건물 안에서의 하루가 상상 이상이었어요. 인생 호텔로 꼽을 만합니다."], ["Sofia · 2026.08", "로비부터 객실까지 모든 게 특별했어요. 특별한 날에 딱 맞는 곳이에요."]] },
+    wbarcelona:{ price: "₩520,000~", extra: "assets/places/3-barcelona.jpg", reviews: [["Marta · 2026.09", "해변 뷰 객실에서 본 일몰이 잊히지 않아요. 바르셀로네타 산책도 바로예요."], ["Diego · 2026.06", "해변까지 1분. 루프톱 바 분위기도 최고였습니다."]] },
+    danieli:   { price: "₩690,000~", extra: "", reviews: [["Chiara · 2026.10", "곤돌라가 오가는 풍경을 보며 맞는 아침이 영화 같았어요."], ["Liam · 2026.08", "클래식한 베네치아 궁전 분위기 그 자체. 위치도 산 마르코에서 가까워요."]] }
   };
 
   function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -42,7 +47,7 @@
 
   var gallery = '<div class="sd-gallery">' +
     '<figure><img src="' + found.img + '" alt="' + esc(found.name) + '"><figcaption>숙소 사진 (예시)</figcaption></figure>' +
-    (f ? '<figure><img src="' + f.extra + '" alt="주변 지역"><figcaption>주변 지역 (예시)</figcaption></figure>' : '') +
+    (f && f.extra ? '<figure><img src="' + f.extra + '" alt="주변 지역"><figcaption>주변 지역 (예시)</figcaption></figure>' : '') +
     (f ? '<figure><img src="' + found.img + '" alt="' + esc(found.name) + '" style="filter:saturate(.92) hue-rotate(6deg)"><figcaption>객실 무드 (예시)</figcaption></figure>' : '') +
     '</div>';
 
