@@ -29,12 +29,13 @@ const railHTML = `<nav class="rail" aria-label="페이지 이동">
   <a class="ri" href="map.html" aria-label="지도" title="지도"><svg viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span class="rl">지도</span></a>
   <a class="ri" href="stay.html" aria-label="숙소" title="숙소"><svg viewBox="0 0 24 24"><path d="M4 20v-8.5L12 5l8 6.5V20"/><path d="M9.5 20v-5.5h5V20"/></svg><span class="rl">숙소</span></a>
   <a class="ri" href="safe.html" aria-label="안전" title="안전"><svg viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.2c0 4.4-2.9 7.6-7 9.3-4.1-1.7-7-4.9-7-9.3V6z"/><path d="m9 11.8 2.2 2.2 3.8-4"/></svg><span class="rl">안전</span></a>
+  <a class="ri" href="about.html" aria-label="소개" title="소개"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><circle cx="12" cy="7.8" r=".9" fill="currentColor" stroke="none"/></svg><span class="rl">소개</span></a>
   <a class="ri rail-auth" href="login.html" id="auth-link" aria-label="로그인" title="로그인"><span class="t-out avc"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.2" r="3.4"/><path d="M5.5 20c.8-3.6 3.4-5.6 6.5-5.6s5.7 2 6.5 5.6"/></svg></span><span class="t-in avc"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.2" r="3.4"/><path d="M5.5 20c.8-3.6 3.4-5.6 6.5-5.6s5.7 2 6.5 5.6"/></svg></span><span class="rl t-out-rl">로그인</span><span class="rl t-in-rl">내 정보</span></a>
 </nav>`;
 const footHTML = `<footer><div class="w">
   <div class="fcols">
     <div class="fcol"><div class="flogo"><img src="assets/wordmark-mint.svg?v=mint-white-20261113" alt="rululala"></div><p>여행지에서 만나는 동네 친구.<br>rululala은 준비 중이에요.</p></div>
-    <div class="fcol"><b>메뉴</b><a href="index.html">홈</a><a href="friends.html">친구 찾기</a><a href="world.html">도시</a><a href="map.html">지도</a><a href="stay.html">숙소</a><a href="safe.html">안전</a></div>
+    <div class="fcol"><b>메뉴</b><a href="index.html">홈</a><a href="friends.html">친구 찾기</a><a href="world.html">도시</a><a href="map.html">지도</a><a href="stay.html">숙소</a><a href="safe.html">안전</a><a href="about.html">소개</a></div>
     <div class="fcol"><b>안내</b><a href="safe.html">안전 수칙</a><a href="credits.html">사진 크레딧</a><a href="login.html" id="foot-auth">로그인</a><a href="mypage.html">내 정보</a></div>
   </div>
   <div class="fnote">rululala은 준비 중이에요. 도시·숙소와 예시 친구의 프로필·별점·인증 표시는 예시예요. 후기·메시지·차단·신고는 이 브라우저에만 저장되는 데모예요.</div>
