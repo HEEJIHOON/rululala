@@ -241,7 +241,7 @@ footer{margin-top:auto;background:var(--deep);color:#9c9693}
 .badge{padding:4px 10px;border:0;border-radius:9999px;font-size:12px;font-weight:600;cursor:default}
 .badge.ok{background:var(--brand-soft);color:var(--pri)}
 .badge.no{background:var(--grad-soft);color:var(--mute)}
-.stars{color:var(--ink);letter-spacing:1px}
+.stars{color:#FFC107;letter-spacing:1px}
 .tg{display:flex;flex-wrap:wrap;gap:6px}
 .acts{display:flex;flex-wrap:wrap;gap:7px;width:100%;margin-top:auto;padding-top:8px}
 .empty{grid-column:1/-1;padding:40px 12px;border:1px dashed var(--line-hover);border-radius:var(--r-lg);color:var(--mute);text-align:center}
@@ -670,7 +670,7 @@ body.home .fp-grid .fp:nth-child(6){rotate:.8deg}
 /* 후기 */
 .rv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .rv{background:#ffffff;border:1px solid #d5ebe4;border-radius:20px;padding:20px;box-shadow:0 8px 22px rgba(24,55,45,.08)}
-.rv .stars{color:#f5a623;letter-spacing:1px}
+.rv .stars{color:#FFC107;letter-spacing:1px}
 .rv p{margin:10px 0 12px;line-height:1.55}
 .rv .who{font-size:13px;color:#6b7771}
 @media (max-width:800px){.rv-grid{grid-template-columns:minmax(0,1fr)}}
