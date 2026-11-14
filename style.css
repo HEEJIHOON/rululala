@@ -436,6 +436,7 @@ body.home .hero-band{padding:24px 0 8px;text-align:left}
 .snav svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .sprev{left:14px}.snext{right:14px}
 .friends-row{margin-top:28px}
+.fp{font:inherit;text-align:left;cursor:pointer;border:0;width:100%}
 .friends-row .fp-grid{display:flex;gap:16px;overflow-x:auto;scrollbar-width:none}
 .friends-row .fp{flex:1 0 260px}
 @media (max-width:700px){.slide{flex-basis:88%}.snav{display:none}.slab{left:18px;bottom:16px}.friends-row .fp-grid{display:flex}.friends-row .fp{flex-basis:78%}}
@@ -593,22 +594,22 @@ body,body.home,body.mint{background:#fdfcf9 url("data:image/svg+xml;utf8,%3Csvg%
 .ri[aria-current="page"] .rl{color:#0caa7d !important;font-weight:700 !important}
 
 /* 현지인 채팅 카드: 민트 포인트 줄 + 흰→연민트 그라데이션 + 사진 민트 링 */
-a.fp{background:linear-gradient(180deg,#ffffff 0%,#eef8f2 100%) !important;border:1px solid #d5ebe4 !important;border-top:3px solid #12d0a0 !important;box-shadow:0 10px 24px rgba(18,208,160,.14),0 2px 6px rgba(24,55,45,.07) !important}
-a.fp .fav img{box-shadow:0 0 0 3px #cdefe2 !important}
+.fp{background:linear-gradient(180deg,#ffffff 0%,#eef8f2 100%) !important;border:1px solid #d5ebe4 !important;border-top:3px solid #12d0a0 !important;box-shadow:0 10px 24px rgba(18,208,160,.14),0 2px 6px rgba(24,55,45,.07) !important}
+.fp .fav img{box-shadow:0 0 0 3px #cdefe2 !important}
 
 /* 홈 현지인 채팅 꾸밈: 말풍선 미리보기, 배지, 온라인 점, 폴라로이드 기울임 */
-body.home a.fp{overflow:visible}
-body.home a.fp .fav{position:relative}
-body.home a.fp .fav::after{content:"";position:absolute;right:0;bottom:2px;width:13px;height:13px;border-radius:50%;background:#22c55e;border:2.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.18)}
+body.home .fp{overflow:visible}
+body.home .fp .fav{position:relative}
+body.home .fp .fav::after{content:"";position:absolute;right:0;bottom:2px;width:13px;height:13px;border-radius:50%;background:#22c55e;border:2.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.18)}
 .fp-badge{display:inline-block;margin-left:6px;padding:3px 9px;border-radius:9999px;background:#e2f5ec;color:#0b8a68;font-size:11px;font-weight:700;letter-spacing:-0.01em;vertical-align:2px;transform:rotate(-1deg)}
 .fp-bubble{position:relative;margin:2px 0 0 !important;padding:10px 13px !important;background:#f0f9f5;border:1px solid #d8efe4;border-radius:4px 14px 14px 14px;color:#1f3f36 !important;font-size:14px !important;line-height:1.55 !important;-webkit-line-clamp:unset !important;overflow:visible !important;display:block !important}
 .fp-bubble::before{content:"";position:absolute;top:-1px;left:-9px;border:5px solid transparent;border-top-color:#d8efe4;border-right-color:#d8efe4}
-body.home .fp-grid a.fp:nth-child(1){rotate:-1.4deg}
-body.home .fp-grid a.fp:nth-child(2){rotate:1deg}
-body.home .fp-grid a.fp:nth-child(3){rotate:-.8deg}
-body.home .fp-grid a.fp:nth-child(4){rotate:1.2deg}
-body.home .fp-grid a.fp:nth-child(5){rotate:-1deg}
-body.home .fp-grid a.fp:nth-child(6){rotate:.8deg}
+body.home .fp-grid .fp:nth-child(1){rotate:-1.4deg}
+body.home .fp-grid .fp:nth-child(2){rotate:1deg}
+body.home .fp-grid .fp:nth-child(3){rotate:-.8deg}
+body.home .fp-grid .fp:nth-child(4){rotate:1.2deg}
+body.home .fp-grid .fp:nth-child(5){rotate:-1deg}
+body.home .fp-grid .fp:nth-child(6){rotate:.8deg}
 
 /* 추천 숙소 마퀴: 홈 맨 위에서 흘러가는 배너 (총 8곳, 화면에는 4곳씩) */
 .stay-marquee{margin-bottom:30px}
@@ -618,8 +619,77 @@ body.home .fp-grid a.fp:nth-child(6){rotate:.8deg}
 .stmq::-webkit-scrollbar{display:none}
 .stmq-track{display:flex;width:max-content}
 .stmq-set{display:flex;gap:20px;padding-right:20px}
-.stmq .stc{flex:0 0 330px;box-shadow:var(--shadow-sm)}
-@media (max-width:1100px){.stmq .stc{flex-basis:280px}}
-@media (max-width:700px){.stmq-set{gap:12px;padding-right:12px}.stmq .stc{flex-basis:210px}}
+.stc-w{position:relative}
+.stc-w>.stc{height:100%;box-shadow:var(--shadow-sm)}
+.stmq-set>.stc-w{flex:0 0 330px}
+@media (max-width:1100px){.stmq-set>.stc-w{flex-basis:280px}}
+@media (max-width:700px){.stmq-set{gap:12px;padding-right:12px}.stmq-set>.stc-w{flex-basis:210px}}
 /* 언어 선택 (홈 상단 로그인 옆) */
 .lang-sel{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:var(--field);color:var(--ink);cursor:pointer}
+
+/* ===== 2026-11-14 후반: 히어로 · 찜하기 · 채팅 미리보기 · 후기 · 숙소 상세 ===== */
+/* 히어로 */
+.hello{padding:26px 0 4px}
+.hello-in{display:flex;align-items:center;gap:28px;background:linear-gradient(135deg,#e2faf1 0%,#fdfcf9 62%);border:1px solid #d5ebe4;border-radius:24px;padding:30px 34px;box-shadow:0 10px 24px rgba(18,208,160,.10)}
+.hello-tx{flex:1;text-align:left}
+.hello-eyebrow{margin:0 0 8px;color:#0caa7d;font-weight:800;font-size:13px;letter-spacing:2px}
+.hello-tx h2{margin:0 0 10px;font-size:28px;letter-spacing:-.5px}
+.hello-sub{margin:0 0 18px;color:#5a6660;line-height:1.6}
+.hello-cta{display:inline-block;background:#12d0a0;color:#053527;font-weight:700;padding:12px 22px;border-radius:999px;text-decoration:none;box-shadow:0 6px 14px rgba(18,208,160,.35);transition:transform .15s}
+.hello-cta:hover{transform:translateY(-2px)}
+.hello-art{flex:0 0 auto;width:168px}
+.hello-art svg{width:100%;height:auto;display:block}
+@media (max-width:700px){.hello-in{flex-direction:column-reverse;text-align:center;padding:24px 20px}.hello-tx{text-align:center}.hello-art{width:124px}.hello-tx h2{font-size:22px}}
+
+/* 찜하기 하트 */
+.wish{position:absolute;top:10px;right:10px;z-index:2;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.93);display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 8px rgba(20,40,32,.25);transition:transform .15s;padding:0}
+.wish svg{width:19px;height:19px;fill:none;stroke:#e0546f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.wish.on svg{fill:#e0546f}
+.wish:hover{transform:scale(1.08)}
+.wish.pop svg{animation:wishpop .3s ease}
+@keyframes wishpop{50%{transform:scale(1.35)}}
+
+/* 채팅 미리보기 모달 */
+.cmodal{position:fixed;inset:0;z-index:1200;display:flex;align-items:center;justify-content:center;padding:18px}
+.cmodal-back{position:absolute;inset:0;background:rgba(20,35,30,.42)}
+.cmodal-card{position:relative;width:min(430px,100%);max-height:86vh;overflow:auto;background:#fdfcf9;border-radius:22px;padding:20px;box-shadow:0 24px 60px rgba(15,40,32,.28)}
+.cmodal-x{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;border:0;background:#eef4f1;font-size:18px;cursor:pointer;color:#40514a}
+.cmodal-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.cmodal-head .fav img{width:52px;height:52px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px #cdefe2}
+.cmodal-head b{display:block;font-size:17px}
+.cmodal-head .meta{display:block;font-size:13px;color:#6b7771}
+.cm-demo{margin-left:auto;background:#fff4d6;color:#8a6d1a;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px}
+.cm-log{display:flex;flex-direction:column;gap:8px;background:#f2f7f4;border-radius:16px;padding:14px}
+.cm-log .m{max-width:80%;padding:10px 14px;border-radius:16px;font-size:14.5px;line-height:1.5}
+.cm-log .them{background:#ffffff;border:1px solid #e3efe9;align-self:flex-start;border-bottom-left-radius:6px}
+.cm-log .me{background:#c9f3e4;align-self:flex-end;border-bottom-right-radius:6px}
+.cm-note{margin:12px 2px 0;font-size:13px;color:#6b7771}
+.cm-note a{color:#0caa7d}
+@media (max-width:700px){.cmodal{align-items:flex-end;padding:0}.cmodal-card{width:100%;border-radius:22px 22px 0 0;max-height:80vh}}
+
+/* 후기 */
+.rv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.rv{background:#ffffff;border:1px solid #d5ebe4;border-radius:20px;padding:20px;box-shadow:0 8px 22px rgba(24,55,45,.08)}
+.rv .stars{color:#f5a623;letter-spacing:1px}
+.rv p{margin:10px 0 12px;line-height:1.55}
+.rv .who{font-size:13px;color:#6b7771}
+@media (max-width:800px){.rv-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* 숙소 상세 */
+.sd-back{display:inline-block;margin:18px 0 14px;color:#0caa7d;text-decoration:none;font-weight:600}
+.sd-gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
+.sd-gallery figure{margin:0}
+.sd-gallery img{width:100%;height:100%;object-fit:cover;border-radius:18px;aspect-ratio:4/3;display:block}
+.sd-gallery figcaption{font-size:12px;color:#6b7771;margin-top:6px}
+.sd-main{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin:20px 0 6px}
+.sd-main h1{margin:0;font-size:26px;letter-spacing:-.5px}
+.sd-main .meta{color:#6b7771}
+.sd-wishwrap{position:relative;flex:0 0 auto}
+.sd-wishwrap .wish{position:static;width:46px;height:46px}
+.sd-price{background:#eefbf5;border:1px solid #cdeede;border-radius:18px;padding:16px 20px;margin:14px 0}
+.sd-price b{color:#0caa7d;font-size:22px}
+.sd-price small{display:block;color:#6b7771;margin-top:4px}
+.sd-sec{margin:22px 0}
+.sd-sec h2{font-size:19px;margin:0 0 12px}
+.sd-note{font-size:13px;color:#6b7771;margin-top:18px}
+@media (max-width:800px){.sd-gallery{grid-template-columns:1fr}}
