@@ -95,5 +95,23 @@ t.addEventListener("scroll",function(){var best=0,d=1e9;for(var j=0;j<n;j++){var
 t.addEventListener("pointerdown",stop);t.addEventListener("mouseenter",stop);t.addEventListener("mouseleave",start);t.addEventListener("touchend",start);
 start();})();
 </script>
+<script>
+(function(){var q=document.querySelector(".stmq");if(!q)return;var track=q.querySelector(".stmq-track");if(!track)return;
+if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var hold=false,timer=null,last=null,speed=60;
+function half(){return track.scrollWidth/2}
+function tick(ts){if(last==null)last=ts;var dt=Math.min(100,ts-last);last=ts;
+if(!hold){var w=half();if(w>0){var x=q.scrollLeft+speed*dt/1000;q.scrollLeft=x>=w?x-w:x;}}
+requestAnimationFrame(tick);}
+function pause(){hold=true;clearTimeout(timer)}
+function resumeSoon(){clearTimeout(timer);timer=setTimeout(function(){hold=false},2000)}
+q.addEventListener("pointerdown",pause,{passive:true});
+q.addEventListener("pointerup",resumeSoon,{passive:true});
+q.addEventListener("pointercancel",resumeSoon,{passive:true});
+q.addEventListener("mouseenter",pause);
+q.addEventListener("mouseleave",resumeSoon);
+q.addEventListener("scroll",function(){var w=half();if(w>0&&q.scrollLeft>=w)q.scrollLeft-=w;},{passive:true});
+requestAnimationFrame(tick);})();
+</script>
 </body>
 </html>
