@@ -618,8 +618,8 @@ body.home .fp-grid .fp:nth-child(6){rotate:.8deg}
 .stmq{overflow-x:auto;overflow-y:hidden;border-radius:var(--r-lg);scrollbar-width:none;-ms-overflow-style:none}
 .stmq::-webkit-scrollbar{display:none}
 .stmq-track{display:flex;width:max-content}
-.stmq-set{display:flex;gap:20px;padding-right:20px}
-.stc-w{position:relative}
+.stmq-set{display:flex;gap:20px;padding-right:20px;flex:none}
+.stc-w{position:relative;aspect-ratio:3/4}
 .stc-w>.stc{height:100%;box-shadow:var(--shadow-sm)}
 .stmq-set>.stc-w{flex:0 0 330px}
 @media (max-width:1100px){.stmq-set>.stc-w{flex-basis:280px}}
