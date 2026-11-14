@@ -72,10 +72,14 @@ const stayTabs = document.querySelector(".stabs");
 const stayBox = document.getElementById("stays");
 
 if (stayTabs && stayBox) {
-  const card = (name, area, img, kind) =>
-    `<a class="stc" href="stay.html"><img src="${img}" alt="${name} 사진" loading="lazy"><span class="cap"><b>${name}</b><small>${kind} · ${area}</small></span></a>`;
+  const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C12 21 3 14.5 3 8.8 3 5.6 5.4 3.5 8 3.5c1.7 0 3.1.9 4 2.3.9-1.4 2.3-2.3 4-2.3 2.6 0 5 2.1 5 5.3C21 14.5 12 21 12 21z"/></svg>';
+  const card = (name, area, img, kind) => {
+    const sid = (img.match(/\d+-(.+)\.jpg$/) || [])[1] || "";
+    return `<div class="stc-w"><a class="stc" href="stay-detail.html?id=${sid}"><img src="${img}" alt="${name} 사진" loading="lazy"><span class="cap"><b>${name}</b><small>${kind} · ${area}</small></span></a><button class="wish" type="button" data-stay="${sid}" aria-label="${name} 찜하기" aria-pressed="false">${HEART}</button></div>`;
+  };
 
   setupTabs(stayTabs, stayBox, "stay", STAYS.map((s) => s.country), (n) => {
     stayBox.innerHTML = STAYS[n].items.map(([name, area, img, kind]) => card(name, area, img, kind)).join("");
+    if (window.RuluWish) window.RuluWish.wire(stayBox);
   });
 }
