@@ -81,6 +81,10 @@
 - `assets/stays/20-standard.jpg` — 더 스탠다드, 하이라인 (뉴욕 미트패킹 디스트릭트, 추천 숙소). 사진: Jim.henderson, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Standard_Hotel_nite_fr_High_Line_jeh.jpg
 - `assets/stays/21-yotel.jpg` — 요텔 뉴욕 타임스스퀘어 (뉴욕 헬스키친, 추천 숙소). 사진: User:Jeremy Page, Public domain. 원본: https://commons.wikimedia.org/wiki/File:YOTEL_New_York_2018-04-14.jpg
 - `assets/stays/16-parkhyatt.jpg` — 파크 하얏트 시드니 (시드니 더 록스, 추천 숙소). 사진: Ymblanter, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_The_Rocks_Park_Hyatt_Sydney_seen_from_the_northeast.jpg
+- `assets/stays/1-22-mbs.jpg` — 마리나 베이 샌즈 (싱가포르 마리나 베이, 추천 숙소). 사진: Diego Delso, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Puente_Helix,_museo_ArtScience_y_hotel_Marina_Bay_Sands,_Marina_Bay,_Singapur,_2023-08-17,_DD_67-69_HDR.jpg
+- `assets/stays/2-23-burjalarab.jpg` — 버즈 알 아랍 (두바이 주메이라 비치, 추천 숙소). 사진: Yacine Hary, CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:Burj_Al_Arab_and_Jumeirah_Beach_(9601659067).jpg
+- `assets/stays/3-24-wbarcelona.jpg` — W 바르셀로나 (바르셀로나 바르셀로네타, 추천 숙소). 사진: Felix König, CC BY 3.0. 원본: https://commons.wikimedia.org/wiki/File:W_Barcelona_2013.jpg
+- `assets/stays/4-25-danieli.jpg` — 호텔 다니엘리 (베니스 리바 델리 스키아보니, 추천 숙소). 사진: Armin Kleiner, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Venice,_Castello,_Riva_degli_Schiavoni,_Danieli.jpg
 - `assets/stays/1-centralyha.jpg` — 시드니 센트럴 YHA (시드니 센트럴, 추천 숙소). 사진: Backpackingmate, CC BY-SA 4.0. 원본: https://commons.wikimedia.org/wiki/File:Sydney_Central_YHA_exterior_(edited).jpg
 - `assets/stays/15-palisade.jpg` — 호텔 팰리세이드 (시드니 밀러스 포인트, 추천 숙소). 사진: Mick Stanic (SplaTT), CC BY 2.0. 원본: https://commons.wikimedia.org/wiki/File:The_Palisade_Hotel,_Millers_Point.jpg
 - `assets/stays/5-imperial.jpg` — 임페리얼 호텔 도쿄 (도쿄 치요다구 우치사이와이초, 추천 숙소). 사진: Kakidai, CC BY-SA 3.0. 원본: https://commons.wikimedia.org/wiki/File:Imperial_Hotel_Tokyo.JPG
