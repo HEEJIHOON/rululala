@@ -21,9 +21,9 @@
   };
 
   var CATS = {
-    sight: { label: "관광지", color: "#2f9e6e", glyph: "관" },
-    stay: { label: "숙소", color: "#3b7dd8", glyph: "숙" },
-    friend: { label: "현지인 친구(예시)", color: "#7c6ff2", glyph: "친" }
+    sight: { label: "관광지", sub: "둘러볼 명소", color: "#2f9e6e" },
+    stay: { label: "숙소", sub: "머물 만한 곳", color: "#3b7dd8" },
+    friend: { label: "현지인 친구", sub: "예시 활동 지역", color: "#7c6ff2" }
   };
 
   // friends.js의 예시 프로필과 같은 5명이에요. 실제 위치가 아니라 도시 중심 근처의 '활동 지역 예시'로만 표시해요.
@@ -93,7 +93,7 @@
   function pin(cat) {
     return L.divIcon({
       className: "mp mp-" + cat,
-      html: "<span aria-hidden='true'>" + CATS[cat].glyph + "</span>",
+      html: "",
       iconSize: [26, 26], iconAnchor: [13, 24], popupAnchor: [0, -21]
     });
   }
@@ -104,7 +104,7 @@
     b.type = "button";
     b.className = "map-cat";
     b.setAttribute("aria-pressed", "true");
-    b.innerHTML = '<span class="dot" style="background:' + CATS[k].color + '"></span>' + CATS[k].label;
+    b.innerHTML = '<span class="dot" style="background:' + CATS[k].color + '"></span><span class="map-cat-tx"><b>' + CATS[k].label + '</b><small>' + CATS[k].sub + '</small></span>';
     b.addEventListener("click", function () {
       currentCats[k] = !currentCats[k];
       b.setAttribute("aria-pressed", String(currentCats[k]));
