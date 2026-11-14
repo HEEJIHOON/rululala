@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>친구 찾기 | rululala</title>
 <!-- Pages caches fixed asset URLs. loader.js gives each page load fresh local CSS/JS URLs. -->
-<script src="loader.js" data-scripts="common.js,friends.js"></script>
+<script src="loader.js" data-scripts="common.js,friends.js,flow.js"></script>
 <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body>
@@ -19,6 +19,14 @@
     <a class="pill" href="mypage.html">내 정보</a>
     <span id="me"></span>
   </div>
+  <div class="ask" id="ask" style="margin:18px 0 6px">
+    <h2>그곳에 사는 사람에게 물어보세요</h2>
+    <p class="ask-sub">도시와 궁금한 주제를 고르면 첫 질문을 만들어 드려요. 예시 프로필로 보여주는 미리보기예요.</p>
+    <div class="ask-step"><span>1. 도시</span><div class="ask-chips" data-ask="city"></div></div>
+    <div class="ask-step" hidden><span>2. 궁금한 것</span><div class="ask-chips" data-ask="topic"></div></div>
+    <div data-ask="out"></div>
+  </div>
+
   <h2 style="margin:18px 0 10px;font-size:18px">실제 가입자</h2>
   <div class="people" id="members" aria-live="polite"></div>
   <h2 style="margin:26px 0 10px;font-size:18px">예시 친구 <span class="meta">(데모)</span></h2>
@@ -40,4 +48,3 @@
 
 </body>
                                                                                                                                                                                                      </html>
-
