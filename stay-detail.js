@@ -45,6 +45,22 @@
     ["여행자 B · 2026년", "직원분들이 친절했어요. 다음에 " + esc(found.country) + " 오면 또 묵고 싶어요."]
   ];
 
+  // 동네 현지인 친구 매칭 (예시 프로필). 실제 가입자가 아니에요.
+  var FRIENDS_BY_CITY = {
+    "도쿄": [{ name: "하루", badge: "도쿄 토박이", img: "assets/people/4-locals-1.jpg", line: "골목 카페와 작은 서점을 찾아다녀요" }],
+    "방콕": [{ name: "소피", badge: "야시장 마스터", img: "assets/people/8-locals-3.jpg", line: "시장 구경과 야시장을 좋아해요" }],
+    "파리": [{ name: "Emma", badge: "파리 카페 헌터", img: "assets/people/7-locals-2.jpg", line: "베이커리와 미술관을 좋아해요" }],
+    "시드니": [{ name: "리아", badge: "브런치 러버", img: "assets/people/11-locals-6.jpg", line: "해변 산책과 브런치를 좋아해요" }],
+    "로마": [{ name: "루카", badge: "골목 산책러", img: "assets/people/10-locals-5.jpg", line: "현지 음식과 숨은 명소를 찾아다녀요" }],
+    "서울": [{ name: "민준", badge: "맛집 헌터", img: "assets/people/9-locals-4.jpg", line: "맛집과 사진 찍기를 좋아해요" }]
+  };
+  var cityFriends = FRIENDS_BY_CITY[(found.area.split(" ")[0] || "")] || [];
+  var friendHtml = cityFriends.length
+    ? cityFriends.map(function (fr) {
+        return '<a class="sd-friend" href="friends.html"><img src="' + fr.img + '" alt="' + esc(fr.name) + ' 예시 프로필 사진 (AI로 만든 가상 인물)" width="52" height="52" loading="lazy"><span class="sd-friend-tx"><b>' + esc(fr.name) + ' <span class="fp-badge">' + esc(fr.badge) + '</span></b><small>' + esc(fr.line) + '</small></span><span class="sd-friend-cta">채팅하기</span></a>';
+      }).join("")
+    : '<p class="meta">이 도시의 예시 친구는 아직 준비 중이에요. <a href="friends.html">친구 찾기</a>에서 먼저 만나 볼 수 있어요.</p>';
+
   var gallery = '<div class="sd-gallery">' +
     '<figure><img src="' + found.img + '" alt="' + esc(found.name) + '"><figcaption>숙소 사진 (예시)</figcaption></figure>' +
     (f && f.extra ? '<figure><img src="' + f.extra + '" alt="주변 지역"><figcaption>주변 지역 (예시)</figcaption></figure>' : '') +
@@ -62,6 +78,7 @@
     '<div class="sd-wishwrap"><button class="wish" type="button" data-stay="' + esc(id) + '" aria-label="찜하기" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 21C12 21 3 14.5 3 8.8 3 5.6 5.4 3.5 8 3.5c1.7 0 3.1.9 4 2.3.9-1.4 2.3-2.3 4-2.3 2.6 0 5 2.1 5 5.3C21 14.5 12 21 12 21z"/></svg></button></div></div>' +
     '<div class="sd-price"><b>' + price + '</b> <span>· 1박 기준 (예시 가격)</span><small>세금·시즌에 따라 달라져요. 예약 연동 전 샘플이에요.</small></div>' +
     '<div class="sd-sec"><h2>이 숙소의 후기 <span class="meta" style="font-size:13px">(예시)</span></h2><div class="rv-grid">' + reviewHtml + '</div></div>' +
+    '<div class="sd-sec"><h2>이 동네 현지인 친구 <span class="meta" style="font-size:13px">(예시)</span></h2><div class="sd-friends">' + friendHtml + '</div></div>' +
     '<p class="sd-note">이 페이지의 가격과 후기는 서비스 방향을 보여주기 위한 예시예요.</p>';
 
   document.title = found.name + " | rululala";
