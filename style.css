@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 /* rululala - Shop-inspired light theme, full layout ("floating constellation on white marble") */
 /* Left nav rail + Shop-style home bands. Existing pages, interactions, storage and accessibility hooks are preserved. */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
@@ -582,3 +583,19 @@ html,body,body.mint{background:#ffffff}
 /* 현지인 채팅 카드: 테두리 대신 부드러운 명암으로 떠 있는 느낌 */
 .friends-row .fp{border:0;box-shadow:0 8px 22px rgba(24,55,45,.12),0 2px 6px rgba(24,55,45,.07)}
 .friends-row .fp:hover{box-shadow:0 12px 28px rgba(24,55,45,.16),0 3px 8px rgba(24,55,45,.08)}
+
+/* ===== 2026-11-14 홈 꾸미기: 종이질감 배경 · 민트 내비 아이콘 · 현지인 채팅 카드 · Jua 제목 ===== */
+html{background:#fdfcf9 !important}
+body,body.home,body.mint{background:#fdfcf9 url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27240%27%20height%3D%27240%27%3E%3Cfilter%20id%3D%27n%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.7%27%20numOctaves%3D%272%27%20stitchTiles%3D%27stitch%27/%3E%3CfeColorMatrix%20values%3D%270%200%200%200%200.45%20%200%200%200%200%200.42%20%200%200%200%200%200.38%20%200%200%200%200.10%200%27/%3E%3C/filter%3E%3Crect%20width%3D%27240%27%20height%3D%27240%27%20filter%3D%27url%28%23n%29%27/%3E%3C/svg%3E") center/240px 240px repeat fixed !important}
+
+/* 왼쪽 내비 아이콘: 진한 민트 통일, 현재 페이지만 밝은 민트 */
+.ri svg{stroke:#0caa7d !important}
+.ri[aria-current="page"] svg{stroke:#12d0a0 !important}
+.ri[aria-current="page"] .rl{color:#0caa7d !important;font-weight:700 !important}
+
+/* 현지인 채팅 카드: 민트 포인트 줄 + 흰→연민트 그라데이션 + 사진 민트 링 */
+a.fp{background:linear-gradient(180deg,#ffffff 0%,#eef8f2 100%) !important;border:1px solid #d5ebe4 !important;border-top:3px solid #12d0a0 !important;box-shadow:0 10px 24px rgba(18,208,160,.14),0 2px 6px rgba(24,55,45,.07) !important}
+a.fp .fav img{box-shadow:0 0 0 3px #cdefe2 !important}
+
+/* 섹션 제목: 둥글고 굵은 Jua */
+.band-head h2{font-family:'Jua',var(--sans) !important;font-weight:400 !important;color:#111111 !important;letter-spacing:0 !important}
