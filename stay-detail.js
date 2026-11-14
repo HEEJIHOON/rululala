@@ -6,7 +6,8 @@
 
   // data.js STAYS에서 사진 파일명(14-okura.jpg → okura)으로 찾기
   var found = null;
-  (window.STAYS || []).forEach(function (g) {
+  var stays = typeof STAYS !== "undefined" ? STAYS : [];
+  stays.forEach(function (g) {
     g.items.forEach(function (it) {
       var m = it[2].match(/\/(\d+-(.+))\.jpg$/);
       if (m && m[2] === id) found = { name: it[0], area: it[1], img: it[2], kind: it[3], country: g.country };
