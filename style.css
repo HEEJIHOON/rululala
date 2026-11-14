@@ -226,6 +226,9 @@ footer{margin-top:auto;background:var(--deep);color:#9c9693}
 .fb{display:grid;grid-template-columns:2fr repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px;padding:14px;border-radius:var(--r-lg)}
 .fb input[type=search],.fb select,.mf input,.mf select,.mf textarea,.cf input,#auth-form input{width:100%;min-width:0;padding:12px 18px;border:1px solid var(--line);border-radius:9999px;background:var(--field);color:var(--ink);font-size:14px;transition:border-color .2s,box-shadow .2s}
 .fb input[type=search]{appearance:none;-webkit-appearance:none}
+.fb-search{position:relative;display:block;min-width:0}
+.fb-search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:17px;height:17px;fill:none;stroke:#8a938f;stroke-width:2;stroke-linecap:round;pointer-events:none}
+.fb .fb-search input[type=search]{padding-left:42px}
 .mf textarea{border-radius:var(--r)}
 .cf input{flex:1}
 .tools{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:22px;color:var(--mute)}
@@ -300,7 +303,7 @@ body.modal-open{overflow:hidden}
   .steps,.people,.safe,.fp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stays{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
   .fb{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .fb input[type=search]{grid-column:1/-1}
+  .fb .fb-search{grid-column:1/-1}
 
   /* 모바일: 레일이 하단 탭 바로 */
   body{padding-left:0;padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
