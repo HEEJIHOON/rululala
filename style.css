@@ -613,6 +613,7 @@ body.home .fp-grid a.fp:nth-child(6){rotate:.8deg}
 /* 추천 숙소 마퀴: 홈 맨 위에서 흘러가는 배너 (총 8곳, 화면에는 4곳씩) */
 .stay-marquee{margin-bottom:30px}
 .stay-marquee .band-head{margin-bottom:14px}
+.stay-marquee .band-head .hot{color:#0caa7d;font-weight:800;letter-spacing:1px}
 .stmq{overflow-x:auto;overflow-y:hidden;border-radius:var(--r-lg);scrollbar-width:none;-ms-overflow-style:none}
 .stmq::-webkit-scrollbar{display:none}
 .stmq-track{display:flex;width:max-content}
