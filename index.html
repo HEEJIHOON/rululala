@@ -44,6 +44,19 @@
     <a class="fp" href="friends.html"><div class="fp-top"><div class="fav"><img src="assets/people/11-locals-6.jpg" alt="리아 예시 프로필 사진 (AI로 만든 가상 인물)" width="56" height="56" loading="lazy"></div><div><b>리아<span class="fp-badge">브런치 러버</span></b><span class="meta">시드니, 호주 · 26세</span></div></div><div><span class="stars">★★★★★</span> <b>4.7</b> <span class="meta">(22개 평가)</span></div><p class="fp-bubble">브런치 후에 서핑 구경 어때요? 🌊</p></a>
   </div>
   </div>
+</div></section>
+<section class="band" id="home-map"><div class="w">
+  <a class="band-head" href="map.html"><h2>지도로 보기</h2><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>
+  <p class="map-sub">도시를 고르면 그 도시의 숙소·관광지와 근처에 사는 현지인 친구를 지도에서 볼 수 있어요. 친구 활동 지역 표시는 예시 화면이에요.</p>
+  <div class="map-controls">
+    <select class="map-city" id="map-city" aria-label="도시 선택"></select>
+    <div class="map-cats" id="map-cats" role="group" aria-label="표시할 핀 종류"></div>
+  </div>
+  <div id="map" role="application" aria-label="도시 지도"></div>
+  <p class="map-status" id="map-status" role="status"></p>
+</div></section>
+
+<section class="band"><div class="w">
   <div class="slider" aria-roledescription="carousel" aria-label="인기 도시">
     <div class="strack" id="strack">
       <a class="slide" href="world.html"><img src="assets/night/1-tokyo.jpg" alt="도쿄 타워와 도쿄 야경" style="object-position:50% 40%"><span class="slab"><b>도쿄</b><small>도쿄 타워 · 야경</small></span></a>
@@ -66,38 +79,9 @@
     <a class="cat" href="friends.html"><span class="ci" aria-hidden="true">💬</span>현지인 채팅</a>
   </div>
 </div></section>
-<section class="band" id="home-map"><div class="w">
-  <a class="band-head" href="map.html"><h2>지도로 보기</h2><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>
-  <p class="map-sub">도시를 고르면 그 도시의 숙소·관광지와 근처에 사는 현지인 친구를 지도에서 볼 수 있어요. 친구 활동 지역 표시는 예시 화면이에요.</p>
-  <div class="map-controls">
-    <select class="map-city" id="map-city" aria-label="도시 선택"></select>
-    <div class="map-cats" id="map-cats" role="group" aria-label="표시할 핀 종류"></div>
-  </div>
-  <div id="map" role="application" aria-label="도시 지도"></div>
-  <p class="map-status" id="map-status" role="status"></p>
-</div></section>
-
-<section class="band"><div class="w">
-  <div class="ask" id="ask">
-    <h2>그곳에 사는 사람에게 물어보세요</h2>
-    <p class="ask-sub">도시와 궁금한 주제를 고르면 첫 질문을 만들어 드려요. 예시 프로필로 보여주는 미리보기예요.</p>
-    <div class="ask-step"><span>1. 도시</span><div class="ask-chips" data-ask="city"></div></div>
-    <div class="ask-step" hidden><span>2. 궁금한 것</span><div class="ask-chips" data-ask="topic"></div></div>
-    <div data-ask="out"></div>
-  </div>
-</div></section>
 
 
-<section class="band"><div class="w">
-  <span class="band-head static"><h2>이렇게 만나요</h2></span>
-  <ol class="steps">
-    <li><a href="world.html"><h3>도시 고르기</h3><p>도시 페이지에서 유럽·아시아 등 지역별 여행지를 둘러보세요. 홈 검색창에 도시 이름을 입력해도 친구 찾기로 바로 이어져요.</p></a></li>
-    <li><a href="friends.html"><h3>친구 찾기</h3><p>도시·관심사·별점 필터와 검색으로 마음에 맞는 현지 친구를 찾아보세요. 프로필에서 소개와 관심사, 평점을 미리 확인할 수 있어요.</p></a></li>
-    <li><a href="friends.html"><h3>인사하기</h3><p>친구에게 메시지를 보내 보세요. 지금은 이 브라우저 안에서만 동작하는 데모예요. 첫마디가 막막하면 맛집 추천·숨은 명소 같은 아이스브레이커 질문을 골라 쓸 수 있어요.</p></a></li>
-    <li><a href="friends.html"><h3>후기 남기기</h3><p>로그인하고 메시지를 보낸 친구에게 별점과 후기를 남길 수 있어요. 지금 후기는 내 브라우저에만 저장돼요.</p></a></li>
-  </ol>
-  <p class="steps-more">만나기 전에는 <a href="safe.html">안전 수칙</a>을 확인해 주세요. 신고·차단 내역은 친구 찾기의 안전 센터에서 관리할 수 있어요.</p>
-</div></section>
+
 
 <script>
 (function(){var t=document.getElementById("strack");if(!t)return;var sl=t.children,n=sl.length,i=0,timer,
@@ -111,6 +95,5 @@ t.addEventListener("scroll",function(){var best=0,d=1e9;for(var j=0;j<n;j++){var
 t.addEventListener("pointerdown",stop);t.addEventListener("mouseenter",stop);t.addEventListener("mouseleave",start);t.addEventListener("touchend",start);
 start();})();
 </script>
-<script src="flow.js"></script>
 </body>
 </html>
