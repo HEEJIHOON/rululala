@@ -15,7 +15,11 @@ const STAYS = [
   { country: "프랑스", items: [["만다린 오리엔탈 뤼테시아", "파리 6구", "assets/stays/9-lutetia.jpg", "호텔"], ["오텔 드 크리옹", "파리 콩코르드 광장", "assets/stays/3-crillon.jpg", "호텔"], ["제너레이터 파리", "파리 10구", "assets/stays/6-genparis.jpg", "호스텔"], ["리츠 파리", "파리 방돔 광장", "assets/stays/11-ritzparis.jpg", "호텔"], ["르 뫼리스", "파리 리볼리가", "assets/stays/7-meurice.jpg", "호텔"]] },
   { country: "영국", items: [["더 사보이", "런던 스트랜드", "assets/stays/19-savoy.jpg", "호텔"], ["더 리츠 런던", "런던 피카딜리", "assets/stays/18-ritz.jpg", "호텔"], ["제너레이터 런던 킹스크로스", "런던 킹스크로스", "assets/stays/5-genlondon.jpg", "호스텔"], ["클라리지스", "런던 메이페어", "assets/stays/3-claridges.jpg", "호텔"], ["더 도체스터", "런던 파크 레인", "assets/stays/4-dorch2.jpg", "호텔"]] },
   { country: "미국", items: [["호텔 첼시", "뉴욕 첼시", "assets/stays/2-chelsea.jpg", "호텔"], ["더 스탠다드, 하이라인", "뉴욕 미트패킹 디스트릭트", "assets/stays/20-standard.jpg", "호텔"], ["요텔 뉴욕 타임스스퀘어", "뉴욕 헬스키친", "assets/stays/21-yotel.jpg", "호텔"], ["더 플라자", "뉴욕 센트럴파크 사우스", "assets/stays/9-plaza.jpg", "호텔"], ["월도프 아스토리아 뉴욕", "뉴욕 파크 애비뉴", "assets/stays/14-waldorf20.jpg", "호텔"]] },
-  { country: "호주", items: [["파크 하얏트 시드니", "시드니 더 록스", "assets/stays/16-parkhyatt.jpg", "호텔"], ["시드니 센트럴 YHA", "시드니 센트럴", "assets/stays/1-centralyha.jpg", "호스텔"], ["호텔 팰리세이드", "시드니 밀러스 포인트", "assets/stays/15-palisade.jpg", "호텔"], ["샹그릴라 시드니", "시드니 더 록스", "assets/stays/13-shangrisyd.jpg", "호텔"], ["더 랭엄 시드니", "시드니 더 록스", "assets/stays/6-langham.jpg", "호텔"]] }
+  { country: "호주", items: [["파크 하얏트 시드니", "시드니 더 록스", "assets/stays/16-parkhyatt.jpg", "호텔"], ["시드니 센트럴 YHA", "시드니 센트럴", "assets/stays/1-centralyha.jpg", "호스텔"], ["호텔 팰리세이드", "시드니 밀러스 포인트", "assets/stays/15-palisade.jpg", "호텔"], ["샹그릴라 시드니", "시드니 더 록스", "assets/stays/13-shangrisyd.jpg", "호텔"], ["더 랭엄 시드니", "시드니 더 록스", "assets/stays/6-langham.jpg", "호텔"]] },
+  { country: "싱가포르", items: [["마리나 베이 샌즈", "싱가포르 마리나 베이", "assets/stays/1-22-mbs.jpg", "호텔"]] },
+  { country: "아랍에미리트", items: [["버즈 알 아랍", "두바이 주메이라 비치", "assets/stays/2-23-burjalarab.jpg", "호텔"]] },
+  { country: "스페인", items: [["W 바르셀로나", "바르셀로나 바르셀로네타", "assets/stays/3-24-wbarcelona.jpg", "호텔"]] },
+  { country: "이탈리아", items: [["호텔 다니엘리", "베니스 리바 델리 스키아보니", "assets/stays/4-25-danieli.jpg", "호텔"]] }
 ];
 
 
