@@ -752,3 +752,8 @@ h2 + .note,.people + .note{color:#48524e;font-size:13px;font-weight:500}
 /* 안전 카드: 항목별 그림 아이콘 (체크/예정 동그라미 대체) */
 .safe li::before{content:none}
 .safe-ic{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:50%;font-size:21px;line-height:1}
+
+/* ===== 레일 로고 RLLL (2026-11-21): R 민트 + LLL 검정 ===== */
+.rail-logo{font-size:15px;letter-spacing:-.02em}
+.rail-logo::after{content:none}
+.rail-logo i{color:#111;font-style:normal}
