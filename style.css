@@ -826,3 +826,11 @@ body.home .cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1
 
 /* Approved two-phone hero v1. */
 @media(min-width:701px){.hello-in{gap:22px;padding-left:34px;padding-right:30px}.hj-tx{flex:1;min-width:300px}.hj-tx h2{font-size:29px!important}.hj-mid{align-self:stretch;display:flex;flex-direction:column;justify-content:flex-end;padding-top:0;margin-left:0;flex:0 0 224px}.hj-tag{font-size:15px;margin:0 0 18px;transform:rotate(-3deg)}.hj-tag svg{width:140px}.hj-phone-extra{width:214px;align-self:center;margin-bottom:-12px;transform:rotate(-7deg);border-radius:30px 30px 0 0;opacity:.98}.hj-phone-extra .hj-log{padding:11px 8px 15px}.hj-phone-extra .hj-log .m{font-size:10.5px;padding:7px 9px}.hj-phone-extra .hj-ph-head{gap:6px}.hj-phone-extra .hj-ph-head b{font-size:12px}}@media(max-width:700px){.hj-phone-extra{display:none}}
+/* Compact mobile hero with two side-by-side example conversations. */
+@media(max-width:700px){
+.hello-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end;gap:12px 9px;min-height:0;padding:23px 17px 0}
+.hj-tx{grid-column:1/-1;padding-bottom:0;text-align:center}.hj-tx h2{font-size:21px!important;margin-bottom:10px}.hj-tx p{font-size:12px;line-height:1.6;margin-bottom:14px}.hj-cta{font-size:13px;padding:12px 20px}
+.hj-mid{display:contents}.hj-mid .hj-tag{grid-column:1/-1;font-size:12px;margin:5px 0 1px;transform:rotate(-2deg)}.hj-tag svg{width:120px;height:9px}
+.hj-phone,.hj-phone-extra{display:block;width:100%;min-width:0;padding:6px 6px 0;border-radius:24px 24px 0 0;align-self:end;margin-bottom:-25px}.hj-phone-extra{grid-column:1;transform:rotate(-5deg)}.hello-in>.hj-phone{grid-column:2;transform:rotate(4deg);margin-bottom:-17px}
+.hj-phone .hj-scr{border-radius:18px 18px 0 0}.hj-phone .hj-notch{width:53px;height:10px}.hj-phone .hj-status{font-size:8px;padding:7px 8px 4px}.hj-phone .hj-ph-head{padding:8px 6px;gap:5px}.hj-phone .hj-ph-head img{width:23px;height:23px}.hj-phone .hj-ph-head b{font-size:10px}.hj-phone .hj-ph-head small{font-size:7px!important}.hj-phone .hj-ph-head .dot{font-size:10px}.hj-phone .hj-log{gap:6px;padding:9px 5px 18px}.hj-phone .hj-log .m{font-size:8.5px;padding:6px 7px;border-radius:9px;line-height:1.5;max-width:95%}.hj-phone .hj-log .tr{font-size:6px}
+}
