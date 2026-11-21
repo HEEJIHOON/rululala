@@ -98,11 +98,15 @@
     });
   }
 
+  var categoryStyle = document.createElement("style");
+  categoryStyle.textContent = '.map-cat{border-color:var(--cat-color)!important;background:color-mix(in srgb,var(--cat-color) 8%,white)!important}.map-cat .map-cat-ic{background:var(--cat-color)!important;color:white!important}.map-cat .map-cat-ic svg{stroke:currentColor!important}.map-cat .map-cat-tx b{color:var(--cat-color)!important}.map-cat[aria-pressed="false"]{background:#f5f6f5!important;opacity:.45}.map-cat[aria-pressed="false"] .map-cat-ic{background:#899b93!important}' + Object.keys(CATS).map(function(k){return '.mp-'+k+'{background:'+CATS[k].color+'!important}'}).join('');
+  document.head.appendChild(categoryStyle);
   // 카테고리 칩
   Object.keys(CATS).forEach(function (k) {
     var b = document.createElement("button");
     b.type = "button";
     b.className = "map-cat";
+    b.style.setProperty("--cat-color", CATS[k].color);
     b.setAttribute("aria-pressed", "true");
     b.innerHTML = '<span class="map-cat-ic" style="background:' + CATS[k].color + '22">' + CATS[k].icon + '</span><span class="map-cat-tx"><b>' + CATS[k].label + '</b><small>' + CATS[k].sub + '</small></span>';
     b.addEventListener("click", function () {
