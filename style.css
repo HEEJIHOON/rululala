@@ -757,3 +757,4 @@ h2 + .note,.people + .note{color:#48524e;font-size:13px;font-weight:500}
 .rail-logo{font-size:15px;letter-spacing:-.02em}
 .rail-logo::after{content:none}
 .rail-logo i{color:#111;font-style:normal}
+.safe.soon li::before{content:none}
