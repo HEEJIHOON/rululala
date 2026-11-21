@@ -14,12 +14,48 @@
 <!-- Pages caches fixed asset URLs. loader.js gives each page load fresh local CSS/JS URLs. -->
 <script src="loader.js" data-scripts="common.js,data.js,main.js,wish.js"></script>
 <noscript><link rel="stylesheet" href="style.css"></noscript>
+<script>
+window.STAY_HOT = {};
+window.GUESTHOUSES = {};
+window.GUEST_PHOTOS = [{"country": "일본", "name": "더 워드로브 호스텔 포레스트 시모키타자와", "area": "도쿄 시모키타자와", "kind": "호스텔", "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/The_Wardrobe_Hostel_Forest_Shimokitazawa.jpg/960px-The_Wardrobe_Hostel_Forest_Shimokitazawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220925085422", "source": "https://commons.wikimedia.org/wiki/File:The_Wardrobe_Hostel_Forest_Shimokitazawa.jpg", "credit": "Syced · CC0 1.0"}, {"country": "미국", "name": "HI 뉴욕 시티 호스텔", "area": "뉴욕 맨해튼", "kind": "호스텔", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/NYC_Hostel_104th.jpg/960px-NYC_Hostel_104th.jpg?20110523031229", "source": "https://commons.wikimedia.org/wiki/File:NYC_Hostel_104th.jpg", "credit": "Smallbones · CC0 1.0"}, {"country": "스페인", "name": "트웬티투 호스텔 바르셀로나", "area": "바르셀로나", "kind": "호스텔", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Barcelona_-_Twentytu_Hostel_Barcelona.jpg/960px-Barcelona_-_Twentytu_Hostel_Barcelona.jpg?20160807085844", "source": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Twentytu_Hostel_Barcelona.jpg", "credit": "Zarateman · CC0 1.0"}, {"country": "싱가포르", "name": "풋프린츠 호스텔", "area": "싱가포르 리틀 인디아", "kind": "호스텔", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Singapore_Footprints_Hostel.jpg/960px-Singapore_Footprints_Hostel.jpg?20170628160116", "source": "https://commons.wikimedia.org/wiki/File:Singapore_Footprints_Hostel.jpg", "credit": "Zairon · CC BY-SA 4.0", "license": "https://creativecommons.org/licenses/by-sa/4.0/"}, {"country": "이탈리아", "name": "주데카 유스 호스텔", "area": "베네치아 주데카섬", "kind": "호스텔", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Ostello_Venezia_sulla_Giudecca.jpg/960px-Ostello_Venezia_sulla_Giudecca.jpg?20170131072317", "source": "https://commons.wikimedia.org/wiki/File:Ostello_Venezia_sulla_Giudecca.jpg", "credit": "Wolfgang Moroder · CC BY-SA 3.0", "license": "https://creativecommons.org/licenses/by-sa/3.0/"}];
+</script>
 </head>
 <body>
 <section id="stay"><div class="w">
   <h1>추천 숙소</h1>
+  <form class="ssbar" id="ssbar">
+    <label class="ssf ssf-dest">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-6-5-6-9.5a6 6 0 0 1 12 0c0 4.5-6 9.5-6 9.5z"/><circle cx="12" cy="10.8" r="2.1"/></svg>
+      <input type="search" id="ss-dest" placeholder="어디로 떠날까요?" autocomplete="off" aria-label="목적지">
+    </label>
+    <div class="ssf ssf-dates">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="6" width="15" height="13.5" rx="2.5"/><path d="M4.5 10.5h15M8.5 4v3.6M15.5 4v3.6"/></svg>
+      <label class="ssdate"><small>체크인</small><input type="date" required id="ss-in" aria-label="체크인 날짜"></label>
+      <span class="ssdash" aria-hidden="true">–</span>
+      <label class="ssdate"><small>체크아웃</small><input type="date" required id="ss-out" aria-label="체크아웃 날짜"></label>
+      <span class="ssn" id="ss-nights">1박</span>
+    </div>
+    <div class="ssf ssf-guests">
+      <button type="button" id="ss-gbtn" aria-haspopup="true" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.2" r="3.1"/><path d="M5.8 19.4a6.2 6.2 0 0 1 12.4 0"/></svg>
+        <span id="ss-gsum">객실 1개, 성인 2명, 어린이 0명</span>
+      </button>
+      <div class="sspop" id="ss-pop" hidden>
+        <div class="ssrow" data-k="rooms"><span>객실</span><div class="ssstep"><button type="button" data-d="-1" aria-label="객실 줄이기">−</button><b id="ss-rooms">1</b><button type="button" data-d="1" aria-label="객실 늘리기">+</button></div></div>
+        <div class="ssrow" data-k="adults"><span>성인</span><div class="ssstep"><button type="button" data-d="-1" aria-label="성인 줄이기">−</button><b id="ss-adults">2</b><button type="button" data-d="1" aria-label="성인 늘리기">+</button></div></div>
+        <div class="ssrow" data-k="kids"><span>어린이</span><div class="ssstep"><button type="button" data-d="-1" aria-label="어린이 줄이기">−</button><b id="ss-kids">0</b><button type="button" data-d="1" aria-label="어린이 늘리기">+</button></div></div>
+        <button type="button" class="ssdone" id="ss-done">완료</button>
+      </div>
+    </div>
+    <button class="ssgo" type="submit">검색</button>
+  </form>
+  <p class="ssdemo">목적지로 예시 숙소를 찾아보세요. 날짜·인원은 검색 조건 미리보기이며, 실제 객실 재고·요금은 연결되어 있지 않아요.</p>
+  <p class="ssres" id="ss-res" hidden></p>
   <div class="stabs" role="tablist" aria-label="나라"></div>
   <div class="stays" id="stays" role="tabpanel"></div>
+  <section class="stay-collection" id="secHot"><h2>가성비 <span>HOT</span> 숙소</h2><p class="collection-note">나라별로 비교해 보는 숙소 컬렉션 예시예요. 실제 가격 순위나 할인 정보는 아니에요.</p><div class="stays" id="staysHot"></div></section>
+  <section class="stay-collection" id="secGh"><h2>게스트하우스 <small>· 호스텔</small></h2><p class="collection-note">선택한 나라의 게스트하우스·호스텔 사진 모음이에요. 현재 운영·예약 가능 여부는 별도 확인이 필요해요.</p><div class="stays" id="staysGh"></div></section>
+<details class="guest-credits"><summary>새 게스트하우스 사진 출처</summary><p>이 사진들은 과거 촬영 기록이며 현재 운영 상태를 보장하지 않아요. 카드에서는 화면 비율에 맞게 잘려 보여요.</p><ul><li><a href="https://commons.wikimedia.org/wiki/File:The_Wardrobe_Hostel_Forest_Shimokitazawa.jpg" target="_blank" rel="noopener">더 워드로브 호스텔 포레스트 시모키타자와</a>: Syced · CC0 1.0</li><li><a href="https://commons.wikimedia.org/wiki/File:NYC_Hostel_104th.jpg" target="_blank" rel="noopener">HI 뉴욕 시티 호스텔</a>: Smallbones · CC0 1.0</li><li><a href="https://commons.wikimedia.org/wiki/File:Barcelona_-_Twentytu_Hostel_Barcelona.jpg" target="_blank" rel="noopener">트웬티투 호스텔 바르셀로나</a>: Zarateman · CC0 1.0</li><li><a href="https://commons.wikimedia.org/wiki/File:Singapore_Footprints_Hostel.jpg" target="_blank" rel="noopener">풋프린츠 호스텔</a>: Zairon · CC BY-SA 4.0 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">라이선스</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Ostello_Venezia_sulla_Giudecca.jpg" target="_blank" rel="noopener">주데카 유스 호스텔</a>: Wolfgang Moroder · CC BY-SA 3.0 · <a href="https://creativecommons.org/licenses/by-sa/3.0/">라이선스</a></li></ul></details>
   <p class="snote">예시로 보여드리는 숙소예요. 룰루랄라에서 예약할 수 있는 숙소는 아니에요. 예약 전에 최신 정보와 후기를 확인해 주세요.</p>
 </div></section>
 
