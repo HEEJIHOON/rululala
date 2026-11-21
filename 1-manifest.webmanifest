@@ -1,0 +1,17 @@
+{
+  "name": "룰루랄라 rululala",
+  "short_name": "룰루랄라",
+  "description": "여행지에서 현지인을 만나는 가장 쉬운 방법. 숙소 찾기부터 현지인 친구와의 채팅까지.",
+  "lang": "ko",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2f4f5",
+  "theme_color": "#12d0a0",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
