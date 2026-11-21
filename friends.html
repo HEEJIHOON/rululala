@@ -18,6 +18,7 @@
 .friend-hero{position:relative;overflow:hidden;padding:48px 40px 34px;border-radius:26px;min-height:300px;background:linear-gradient(90deg,rgba(3,36,29,.94),rgba(3,36,29,.72) 40%,rgba(3,36,29,.06) 80%),url(https://images.pexels.com/photos/1058919/pexels-photo-1058919.jpeg?auto=compress&w=1260&h=750&dpr=1) center 47%/cover;box-shadow:0 14px 28px #133d2720;margin-bottom:20px}.friend-hero h1{color:#fff;font-size:34px;margin:10px 0 15px;letter-spacing:-.04em}.friend-eye{color:#83e9c7;font-size:12px;font-weight:700}.friend-hero p{color:#ffffffdb;font-size:15px;line-height:1.7;white-space:pre-line;margin:0 0 28px}.friend-hero .fb{max-width:450px;background:#fffffff5;padding:8px;box-shadow:none;margin:0}.friend-hero .fb-search{width:100%}.friend-photo-note{position:absolute;right:22px;bottom:16px;font-size:10px;color:#fff;text-shadow:0 1px 4px #000b}@media(max-width:700px){.friend-hero{padding:28px 22px 34px;min-height:365px;background-position:59% center;background-image:linear-gradient(90deg,#03241de8,#03241d72 85%),url(https://images.pexels.com/photos/1058919/pexels-photo-1058919.jpeg?auto=compress&w=1260&h=750&dpr=1)}.friend-hero h1{font-size:26px;max-width:230px;line-height:1.3;margin:12px 0 18px}.friend-hero p{font-size:12px;max-width:250px;margin-bottom:38px}.friend-hero .fb{padding:5px}.friend-photo-note{font-size:8px;right:15px;bottom:13px}.friend-eye{font-size:10px}}
 .friend-hero .fb .fb-search{flex:1;max-width:none;min-width:0}.friend-hero .fb .fb-search input{width:100%;min-width:0}
 .friend-hero .fb{display:block}.friend-hero .fb .fb-search{display:block;width:100%}.friend-hero .fb .fb-search input[type=search]{display:block;width:100%;max-width:none}
+@media(min-width:701px){.friend-hero{width:calc(100vw - 112px);max-width:none;margin-left:calc((100% - (100vw - 112px))/2)}}
 </style>
 </head>
 <body>
@@ -39,8 +40,6 @@
   </div>
 
 
-  <h2 style="margin:18px 0 10px;font-size:18px">실제 가입자</h2>
-  <div class="people" id="members" aria-live="polite"></div>
   <h2 style="margin:26px 0 10px;font-size:18px">예시 친구 <span class="meta">(데모)</span></h2>
   <p class="note" style="margin:0 0 10px">아래 필터와 별점·인증 표시는 예시 친구에만 적용돼요. 실제 가입자에게는 해당 데이터가 없어요.</p>
   <div class="fb">
@@ -54,6 +53,8 @@
   </div>
   <div class="people" id="grid" aria-live="polite"></div>
   <p class="note" style="margin-top:20px">※ 예시 친구의 프로필·별점·인증 표시는 예시 데이터이며 실제 신원 확인이 아니에요. 실제 가입자의 정보는 본인이 직접 쓴 내용이에요. 후기·메시지·차단은 이 브라우저에만 저장되는 데모예요.</p>
+  <h2 style="margin:18px 0 10px;font-size:18px">실제 가입자</h2>
+  <div class="people" id="members" aria-live="polite"></div>
 </div></section>
 
 <div id="modal" role="dialog" aria-modal="true"><div id="modalBox"></div></div>
