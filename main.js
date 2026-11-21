@@ -89,15 +89,16 @@ if (stayTabs && stayBox) {
   const hotSec = document.getElementById("secHot");
   const ghSec = document.getElementById("secGh");
   const pcard = (it) => {
+    if (it.curated) return `<div class="stc-w curated-stay"><a class="stc" href="${it.url}" target="_blank" rel="noopener noreferrer"><img src="${it[2]}" alt="${it.city} 도시 참고 이미지, 숙소 실물 사진 아님" loading="lazy"><span class="curated-image-label">${it.city} · 도시 이미지</span><span class="cap"><b>${it[0]}</b><small>${it[3]} · ${it[1]}</small><small>공식 숙소 보기 ↗</small></span></a><button class="wish" type="button" data-stay="${it.id}" aria-label="숙소 찜하기" aria-pressed="false">${HEART}</button><div class="curated-stay-info"><b>${it.rate || '1박 요금 · 날짜 선택 후 확인'}</b><p>${it.rateNote || '선택한 날짜·인원·객실에 따라 요금이 달라져요.'}</p><span>${it.reason}</span><small>정보 확인 2026.11.22 · 예약은 공식 사이트에서</small></div></div>`;
     if (it.photoSource) return `<div class="stc-w"><a class="stc" href="${it.photoSource}" target="_blank" rel="noopener"><img src="${it[2]}" alt="${it[0]} 과거 촬영 사진" loading="lazy"><span class="cap"><b>${it[0]}</b><small>${it[3]} · ${it[1]}</small><small>사진·출처 보기 ↗</small></span></a></div>`;
     return card(...it.slice(0,4));
   };
   STAYS.forEach((c) => {
-    window.STAY_HOT[c.country] = c.items.filter(it => it[3] !== "리조트").slice(1,4);
-    if (!window.STAY_HOT[c.country].length) window.STAY_HOT[c.country] = c.items.slice(0,3);
-    window.GUESTHOUSES[c.country] = c.items.filter(it => it[3] === "호스텔" || it[3] === "게스트하우스");
+    window.STAY_HOT[c.country] = [];
+    window.GUESTHOUSES[c.country] = c.items.filter(it => (it[3] === "호스텔" || it[3] === "게스트하우스") && !(c.country === "프랑스" && it[0].includes("제너레이터")));
   });
-  (window.GUEST_PHOTOS || []).forEach(p => { const it=[p.name,p.area,p.image,p.kind]; it.photoSource=p.source; window.GUESTHOUSES[p.country].push(it); });
+  (window.GUEST_PHOTOS || []).forEach(p => { if(p.country === '미국' && p.name.startsWith('HI ') && (window.CURATED_STAYS || []).some(x => x.country === '미국' && x.name.startsWith('HI '))) return; const it=[p.name,p.area,p.image,p.kind]; it.photoSource=p.source; window.GUESTHOUSES[p.country].push(it); });
+  (window.CURATED_STAYS || []).forEach(p => { const it=[p.name,p.area,p.image,p.kind]; Object.assign(it,p,{curated:true}); if(p.hot) window.STAY_HOT[p.country] = (window.STAY_HOT[p.country] || []).filter(x=>x.curated).concat([it]); if(p.guest) window.GUESTHOUSES[p.country].push(it); });
   const moreBox = document.getElementById("staysMore");
   const moreSec = document.getElementById("secMore");
   const moreBtn = document.getElementById("stay-more-btn");
@@ -211,9 +212,10 @@ if (stayTabs && stayBox) {
       const ok = `<span class="ssok">객실 재고 미연동</span>`;
       if (unique.length) {
         res.textContent = `“${q}” 검색 결과 ${unique.length}개 · ${base} · 실제 객실 재고·요금 미확인`;
-        stayBox.innerHTML = unique.map(([name, area, img, kind]) => {
+        stayBox.innerHTML = unique.map((original) => {
+          const [name,area,img,kind] = original;
           const photo = (window.GUEST_PHOTOS || []).find(p => p.image === img);
-          const it = [name,area,img,kind]; if(photo) it.photoSource=photo.source;
+          const it = original.curated ? original : [name,area,img,kind]; if(photo) it.photoSource=photo.source;
           const h = pcard(it);
           return h.replace('<div class="stc-w">', `<div class="stc-w">${ok}`);
         }).join("");
