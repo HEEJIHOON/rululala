@@ -725,3 +725,20 @@ body.home .fp-grid .fp:nth-child(6){rotate:.8deg}
 .sd-friend-tx{flex:1;display:flex;flex-direction:column;gap:2px}
 .sd-friend-tx small{color:#5c7368;font-size:12.5px}
 .sd-friend-cta{font-size:12px;font-weight:600;color:#0caa7d;border:1px solid #bfeadb;border-radius:999px;padding:5px 10px;background:#e6f8f1}
+
+/* ===== 글씨 강화 (2026-11-21): 홈 지도 설명·핀 버튼, 예시 친구 안내·필터·카드 ===== */
+.map-sub{color:#3f4543;font-weight:500}
+.map-cat-tx b{font-weight:700}
+.map-cat-tx small{color:#48524e;font-weight:600}
+h2 + .note,.people + .note{color:#48524e;font-size:13px;font-weight:500}
+.fb select{color:#1f2422;font-weight:600}
+.tools label{color:#3f4543;font-weight:600}
+.pc p{color:#3f4543;font-weight:500}
+.pc .meta{color:#4d5753;font-weight:600}
+.tg span{color:#48524e;font-weight:600}
+.badge.no{color:#5c6662}
+
+/* ===== 안전+소개 통합 페이지 (2026-11-21): 카드에 제목+설명 두 줄 ===== */
+.safe li>span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.safe li small{color:#48524e;font-size:13px;font-weight:500;line-height:1.55}
+.safe.soon li small{color:#5c6662}
