@@ -22,7 +22,7 @@ const currentPage = location.pathname.split("/").pop() || "index.html";
 // 모든 페이지가 같은 민트 테마(배경·포인트 색·레일·푸터)를 써요
 if (document.body && document.body.classList) document.body.classList.add("mint");
 const railHTML = `<nav class="rail" aria-label="페이지 이동">
-  <a class="rail-logo" href="index.html" aria-label="rululala 홈">r</a>
+  <a class="rail-logo" href="index.html" aria-label="rululala 홈">R<i>LLL</i></a>
   <a class="ri" href="index.html" aria-label="홈" title="홈"><svg viewBox="0 0 24 24"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/></svg><span class="rl">홈</span></a>
   <a class="ri" href="friends.html" aria-label="친구 찾기" title="친구 찾기"><svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.8 19.5c.6-3.2 2.7-5 5.2-5s4.6 1.8 5.2 5"/><circle cx="17" cy="9.5" r="2.5"/><path d="M15.8 14.7c2.3.3 3.9 1.9 4.4 4.3"/></svg><span class="rl">친구</span></a>
   <a class="ri" href="stay.html" aria-label="숙소" title="숙소"><svg viewBox="0 0 24 24"><path d="M4 20v-8.5L12 5l8 6.5V20"/><path d="M9.5 20v-5.5h5V20"/></svg><span class="rl">숙소</span></a>
