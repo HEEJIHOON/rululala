@@ -21,9 +21,9 @@
   };
 
   var CATS = {
-    sight: { label: "관광지", sub: "둘러볼 명소", color: "#2f9e6e", icon: "🏛️" },
-    stay: { label: "숙소", sub: "머물 만한 곳", color: "#3b7dd8", icon: "🏨" },
-    friend: { label: "현지인 친구", sub: "예시 활동 지역", color: "#7c6ff2", icon: "🧑‍🤝‍🧑" }
+    sight: { label: "관광지", sub: "둘러볼 명소", color: "#2f9e6e", icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5M4 9h16M5 19h14M3 21h18M6 10v7M10 10v7M14 10v7M18 10v7"/></svg>' },
+    stay: { label: "숙소", sub: "머물 만한 곳", color: "#3b7dd8", icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4h14v17M3 21h18M9 21v-5h6v5M9 8h1M14 8h1M9 12h1M14 12h1"/></svg>' },
+    friend: { label: "현지인 친구", sub: "예시 활동 지역", color: "#7c6ff2", icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M18 13a5 5 0 0 1 3 4v3"/></svg>' }
   };
 
   // friends.js의 예시 프로필과 같은 5명이에요. 실제 위치가 아니라 도시 중심 근처의 '활동 지역 예시'로만 표시해요.
