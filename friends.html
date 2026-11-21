@@ -14,12 +14,23 @@
 <!-- Pages caches fixed asset URLs. loader.js gives each page load fresh local CSS/JS URLs. -->
 <script src="loader.js" data-scripts="common.js,friends.js,flow.js"></script>
 <noscript><link rel="stylesheet" href="style.css"></noscript>
+<style>
+.friend-hero{position:relative;overflow:hidden;padding:48px 40px 34px;border-radius:26px;min-height:300px;background:linear-gradient(90deg,rgba(3,36,29,.94),rgba(3,36,29,.72) 40%,rgba(3,36,29,.06) 80%),url(https://images.pexels.com/photos/1058919/pexels-photo-1058919.jpeg?auto=compress&w=1260&h=750&dpr=1) center 47%/cover;box-shadow:0 14px 28px #133d2720;margin-bottom:20px}.friend-hero h1{color:#fff;font-size:34px;margin:10px 0 15px;letter-spacing:-.04em}.friend-eye{color:#83e9c7;font-size:12px;font-weight:700}.friend-hero p{color:#ffffffdb;font-size:15px;line-height:1.7;white-space:pre-line;margin:0 0 28px}.friend-hero .fb{max-width:450px;background:#fffffff5;padding:8px;box-shadow:none;margin:0}.friend-hero .fb-search{width:100%}.friend-photo-note{position:absolute;right:22px;bottom:16px;font-size:10px;color:#fff;text-shadow:0 1px 4px #000b}@media(max-width:700px){.friend-hero{padding:28px 22px 34px;min-height:365px;background-position:59% center;background-image:linear-gradient(90deg,#03241de8,#03241d72 85%),url(https://images.pexels.com/photos/1058919/pexels-photo-1058919.jpeg?auto=compress&w=1260&h=750&dpr=1)}.friend-hero h1{font-size:26px;max-width:230px;line-height:1.3;margin:12px 0 18px}.friend-hero p{font-size:12px;max-width:250px;margin-bottom:38px}.friend-hero .fb{padding:5px}.friend-photo-note{font-size:8px;right:15px;bottom:13px}.friend-eye{font-size:10px}}
+.friend-hero .fb .fb-search{flex:1;max-width:none;min-width:0}.friend-hero .fb .fb-search input{width:100%;min-width:0}
+.friend-hero .fb{display:block}.friend-hero .fb .fb-search{display:block;width:100%}.friend-hero .fb .fb-search input[type=search]{display:block;width:100%;max-width:none}
+</style>
 </head>
 <body>
 <section><div class="w">
+  <div class="friend-hero">
+  <span class="friend-eye">낯선 도시가, 친근해지는 순간</span>
   <h1>여행 친구를 찾아보세요</h1>
+  <p>함께 걷고, 커피를 마시고, 여행 이야기를 나눠요.
+다음 여행에서 만날 친구를 찾아보세요.</p>
   <div class="fb" role="search">
     <span class="fb-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q" type="search" placeholder="닉네임, 도시, 소개 검색" aria-label="검색"></span>
+  </div>
+  <span class="friend-photo-note">여행 친구와 함께하는 순간 · 연출 사진</span>
   </div>
   <div class="tools">
     <button class="pill" data-act="safety">🛡️ 안전 센터</button>
