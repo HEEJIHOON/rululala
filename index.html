@@ -124,5 +124,23 @@ trBtn.setAttribute("aria-pressed",on?"true":"false");
 trBtn.textContent=on?"🌐 원문 보기":"🌐 번역 보기";});
 })();
 </script>
+<script>
+/* Desktop local-card marquee. Clones are pointer-only and hidden from assistive tech. */
+(function(){
+var row=document.querySelector('.ln-grid');if(!row)return;
+var cards=Array.from(row.children),wide=matchMedia('(min-width:701px)'),reduce=matchMedia('(prefers-reduced-motion:reduce)');
+cards.forEach(function(card){var clone=card.cloneNode(true);clone.classList.add('ln-copy');clone.setAttribute('aria-hidden','true');clone.tabIndex=-1;clone.addEventListener('click',function(){card.click()});row.appendChild(clone)});
+row.classList.add('ln-auto');
+var btn=document.createElement('button');btn.type='button';btn.className='ln-motion';btn.textContent='자동 넘김 일시정지';btn.setAttribute('aria-pressed','false');document.querySelector('.ln-title').appendChild(btn);
+var stopped=reduce.matches,hover=false,last=0,pos=0;
+function label(){btn.textContent=stopped?'자동 넘김 재생':'자동 넘김 일시정지';btn.setAttribute('aria-pressed',stopped?'true':'false')}
+label();btn.addEventListener('click',function(){stopped=!stopped;label()});
+row.addEventListener('mouseenter',function(){hover=true});row.addEventListener('mouseleave',function(){hover=false});
+function reset(){if(!wide.matches){row.scrollLeft=0;pos=0}last=0}wide.addEventListener('change',reset);reduce.addEventListener('change',function(){stopped=reduce.matches;label()});
+function tick(t){var dt=last?Math.min(t-last,40):0;last=t;
+if(wide.matches&&!stopped&&!hover&&!row.contains(document.activeElement)&&!document.hidden&&!document.body.style.overflow){var half=row.children[cards.length].offsetLeft-row.children[0].offsetLeft;if(half>0){pos=(pos+dt*.032)%half;row.scrollLeft=pos}}
+requestAnimationFrame(tick)}requestAnimationFrame(tick);
+})();
+</script>
 </body>
 </html>
