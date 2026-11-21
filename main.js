@@ -98,7 +98,21 @@ if (stayTabs && stayBox) {
     window.GUESTHOUSES[c.country] = c.items.filter(it => it[3] === "호스텔" || it[3] === "게스트하우스");
   });
   (window.GUEST_PHOTOS || []).forEach(p => { const it=[p.name,p.area,p.image,p.kind]; it.photoSource=p.source; window.GUESTHOUSES[p.country].push(it); });
+  const moreBox = document.getElementById("staysMore");
+  const moreSec = document.getElementById("secMore");
+  const moreBtn = document.getElementById("stay-more-btn");
+  let moreCount = 6;
+  const renderMore = (n) => {
+    if(!moreBox) return;
+    const items = STAYS.flatMap((c,i) => i === n ? [] : c.items);
+    moreBox.innerHTML = items.slice(0,moreCount).map(pcard).join("");
+    document.getElementById("stay-more-count").textContent = `${Math.min(moreCount,items.length)} / ${items.length}개 예시 숙소`;
+    moreBtn.disabled = moreCount >= items.length;
+    moreBtn.textContent = moreBtn.disabled ? "모든 예시 숙소를 봤어요" : "숙소 더 보기 ＋";
+    if(window.RuluWish) window.RuluWish.wire(moreBox);
+  };
   const renderSub = (n) => {
+    if(moreSec) moreSec.hidden = false; moreCount=6; renderMore(n);
     const c = STAYS[n].country;
     const hot = (window.STAY_HOT || {})[c] || [];
     const gh = (window.GUESTHOUSES || {})[c] || [];
@@ -116,6 +130,8 @@ if (stayTabs && stayBox) {
     renderMain(n);
     renderSub(n);
   });
+
+  if(moreBtn) moreBtn.addEventListener("click", () => { moreCount += 6; renderMore(curTab); });
 
   /* ===== 숙소 검색 바 (데모: 실제 예약·재고 데이터 없음) ===== */
   const ssBar = document.getElementById("ssbar");
@@ -187,6 +203,7 @@ if (stayTabs && stayBox) {
         if (c.includes(q) || it[0].includes(q) || it[1].includes(q)) hits.push(it);
       }));
       stayTabs.hidden = true;
+      if(moreSec) moreSec.hidden = true;
       if (hotSec) hotSec.hidden = true;
       if (ghSec) ghSec.hidden = true;
       res.hidden = false;
