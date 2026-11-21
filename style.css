@@ -823,3 +823,6 @@ body.home .cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1
 /* Desktop local cards: a continuous row, mobile retains the two-column grid. */
 .ln-copy{display:none}.ln-motion{display:none;border:1px solid #cce9dd;border-radius:99px;padding:7px 12px;background:#fff;color:#0a7f69;font:inherit;font-size:11px;cursor:pointer}
 @media(min-width:701px){.ln-motion{display:inline-block}.ln-grid.ln-auto{display:flex;gap:16px;overflow:hidden;padding:5px 0 12px}.ln-auto .ln-card{flex:0 0 calc((100% - 80px)/6);min-width:170px}.ln-auto .ln-copy{display:block}}
+
+/* Approved two-phone hero v1. */
+@media(min-width:701px){.hello-in{gap:22px;padding-left:34px;padding-right:30px}.hj-tx{flex:1;min-width:300px}.hj-tx h2{font-size:29px!important}.hj-mid{align-self:stretch;display:flex;flex-direction:column;justify-content:flex-end;padding-top:0;margin-left:0;flex:0 0 224px}.hj-tag{font-size:15px;margin:0 0 18px;transform:rotate(-3deg)}.hj-tag svg{width:140px}.hj-phone-extra{width:214px;align-self:center;margin-bottom:-12px;transform:rotate(-7deg);border-radius:30px 30px 0 0;opacity:.98}.hj-phone-extra .hj-log{padding:11px 8px 15px}.hj-phone-extra .hj-log .m{font-size:10.5px;padding:7px 9px}.hj-phone-extra .hj-ph-head{gap:6px}.hj-phone-extra .hj-ph-head b{font-size:12px}}@media(max-width:700px){.hj-phone-extra{display:none}}
