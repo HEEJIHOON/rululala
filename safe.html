@@ -3,6 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#12d0a0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="룰루랄라">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>안전 | rululala</title>
 <!-- Pages caches fixed asset URLs. loader.js gives each page load fresh local CSS/JS URLs. -->
 <script src="loader.js" data-scripts="common.js"></script>
@@ -11,13 +18,48 @@
 <body>
 <section id="safe"><div class="w">
   <h1>안전한 여행을 위해 준비하고 있어요</h1>
+  <p class="snote">낯선 여행지에서의 만남이 편안하려면 안전이 먼저예요. 지금 되는 것과 출시 전에 준비 중인 것을 나눠 담았어요.</p>
   <h2>지금 데모에서 해 볼 수 있어요</h2>
-  <ul class="safe"><li>후기 남기기 (이 브라우저에 저장)</li><li>신고 기록 남기기 (운영팀에는 전달되지 않아요)</li><li>사용자 차단</li><li>공공장소 첫 만남 안내</li></ul>
+  <ul class="safe">
+    <li><span><b>후기 남기기</b><small>만난 친구에게 별점과 후기를 남길 수 있어요. 지금은 이 브라우저에만 저장돼요.</small></span></li>
+    <li><span><b>신고 기록 남기기</b><small>불편한 일이 있으면 신고로 기록해 두세요. 데모에서는 운영팀에 전달되지 않아요.</small></span></li>
+    <li><span><b>사용자 차단</b><small>더 보고 싶지 않은 친구는 차단해서 목록에서 숨길 수 있어요.</small></span></li>
+    <li><span><b>공공장소 첫 만남 안내</b><small>첫 만남은 사람이 많은 공공장소에서 하도록 안내해 드려요.</small></span></li>
+  </ul>
   <h2 class="safe-soon">아직 제공하지 않아요 (예정)</h2>
-  <ul class="safe soon"><li>휴대폰 인증</li><li>신분증 확인</li><li>거주지 확인</li><li>운영팀 심사와 신고 처리</li></ul>
+  <ul class="safe soon">
+    <li><span><b>휴대폰 인증</b><small>본인 번호를 확인해 한 사람이 여러 계정을 만들지 못하게 해요.</small></span></li>
+    <li><span><b>신분증 확인</b><small>실명과 나이를 확인한 프로필에만 인증 표시를 달아요.</small></span></li>
+    <li><span><b>거주지 확인</b><small>현지인 친구는 그 동네에 실제로 사는지 확인해요.</small></span></li>
+    <li><span><b>운영팀 심사와 신고 처리</b><small>접수된 신고는 운영팀이 직접 확인하고 조치해요.</small></span></li>
+  </ul>
   <p class="note" style="margin-top:20px">친구 찾기의 인증 표시와 별점은 예시 데이터이며 실제 신원 확인이 아니에요.</p>
 </div></section>
 
+<section class="band" id="about"><div class="w">
+  <span class="band-head static"><h2>rululala 소개</h2></span>
+  <p class="demo-note">여행지에서 만나는 동네 친구, rululala가 준비 중인 기능과 먼저 다녀온 사람들의 후기를 모았어요.</p>
+  <div class="feat">
+    <h2 class="feat-h">새로 생긴 기능 <span class="feat-badge">예시 화면</span></h2>
+    <div class="feat-grid">
+      <div class="feat-card"><span class="feat-ic" aria-hidden="true">🌐</span><b>채팅 실시간 번역</b><p>현지인 친구와의 대화를 한국어로 바로 번역해 줘요. 홈의 현지인 채팅 카드를 눌러 예시 대화에서 '번역 보기'를 켜 보세요.</p></div>
+      <div class="feat-card"><span class="feat-ic" aria-hidden="true">🗺️</span><b>현지인 하루 코스 카드</b><p>현지인 친구가 오전·점심·저녁 동선을 카드로 짜 줘요. 예시 대화 맨 아래에서 하루 코스 카드를 확인해 보세요.</p></div>
+      <div class="feat-card"><span class="feat-ic" aria-hidden="true">🏨</span><b>동네 친구 매칭</b><p>숙소 상세 페이지 아래에서 그 동네에 사는 현지인 친구를 바로 만나고 채팅을 시작할 수 있어요.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band"><div class="w">
+  <span class="band-head static"><h2>먼저 다녀온 사람들의 후기</h2></span>
+  <p class="demo-note">예시 후기예요. 실제 이용자의 평가가 아니에요.</p>
+  <div class="rv-grid">
+    <div class="rv"><span class="stars">★★★★★</span><p>도쿄에서 관광지 말고 진짜 동네를 봤어요. 현지인 친구가 알려준 카페 투어가 최고였습니다!</p><span class="who">유진 · 서울</span></div>
+    <div class="rv"><span class="stars">★★★★★</span><p>처음 가 본 방콕인데 야시장 코스를 짜줘서 하루가 꽉 찼어요. 혼자였으면 못 갔을 곳들이에요.</p><span class="who">Daniel · 싱가포르</span></div>
+    <div class="rv"><span class="stars">★★★★☆</span><p>숙소 고르다가 현지인 친구까지 사귀고 왔어요. 다음 여행도 여기서 시작하려고요.</p><span class="who">Mina · 도쿄</span></div>
+    <div class="rv"><span class="stars">★★★★★</span><p>파리에서 크루아상 맛집만 골라 돌았어요. Emma가 알려준 6구 블랑제리는 지금도 생각나요.</p><span class="who">지우 · 부산</span></div>
+    <div class="rv"><span class="stars">★★★★★</span><p>혼자 여행이 처음이라 걱정했는데, 시드니에서 브런치 친구를 만나서 금방 편해졌어요.</p><span class="who">Sofia · 마드리드</span></div>
+    <div class="rv"><span class="stars">★★★★★</span><p>하노이 골목 커피 투어가 인상 깊었어요. 지도에 없는 가게들만 다녀서 친구들이 어디냐고 물어봐요.</p><span class="who">현우 · 대전</span></div>
+  </div>
+</div></section>
 </body>
 </html>
-
