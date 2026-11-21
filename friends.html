@@ -20,7 +20,7 @@
 .friend-hero .fb{display:block}.friend-hero .fb .fb-search{display:block;width:100%}.friend-hero .fb .fb-search input[type=search]{display:block;width:100%;max-width:none}
 @media(min-width:701px){.friend-hero{width:calc(100vw - 112px);max-width:none;margin-left:calc((100% - (100vw - 112px))/2)}}
 </style>
-</head>
+<style>.fb .rating-filter{position:relative;display:block;min-width:180px}.fb .rating-filter select{width:100%;padding-left:37px}.rating-filter-star{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:#e6b43b;font-size:19px;line-height:1;pointer-events:none;z-index:1}.yellow-star{color:#e6b43b}#grid .friend-photo-card .stars{color:#e6b43b}@media(max-width:700px){.fb .rating-filter{width:100%;min-width:0}}</style></head>
 <body>
 <section><div class="w">
   <div class="friend-hero">
@@ -45,7 +45,7 @@
   <div class="fb">
     <select id="city" aria-label="예시 도시 필터"><option value="">모든 도시</option></select>
     <select id="tag" aria-label="예시 관심사 필터"><option value="">모든 관심사</option><option>맛집</option><option>카페</option><option>산책</option><option>전시</option><option>사진</option><option>쇼핑</option><option>등산</option></select>
-    <select id="min" aria-label="예시 최소 별점"><option value="0">모든 별점</option><option value="1">★ 1점 이상</option><option value="2">★ 2점 이상</option><option value="3">★ 3점 이상</option><option value="4">★ 4점 이상</option><option value="4.5">★ 4.5점 이상</option><option value="5">★ 5점</option></select>
+    <span class="rating-filter"><span class="rating-filter-star" aria-hidden="true">★</span><select id="min" aria-label="예시 최소 별점"><option value="0">모든 별점</option><option value="1">1점 이상</option><option value="2">2점 이상</option><option value="3">3점 이상</option><option value="4">4점 이상</option><option value="4.5">4.5점 이상</option><option value="5">5점</option></select></span>
     <select id="sort" aria-label="예시 정렬"><option value="rec">추천순</option><option value="rating">평점순</option><option value="reviews">후기 많은 순</option></select>
   </div>
   <div class="tools">
