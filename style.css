@@ -819,3 +819,7 @@ body.home .cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1
 
 
 @media(max-width:700px){body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}.rail .ri{flex-shrink:1;min-width:0}}
+
+/* Desktop local cards: a continuous row, mobile retains the two-column grid. */
+.ln-copy{display:none}.ln-motion{display:none;border:1px solid #cce9dd;border-radius:99px;padding:7px 12px;background:#fff;color:#0a7f69;font:inherit;font-size:11px;cursor:pointer}
+@media(min-width:701px){.ln-motion{display:inline-block}.ln-grid.ln-auto{display:flex;gap:16px;overflow:hidden;padding:5px 0 12px}.ln-auto .ln-card{flex:0 0 calc((100% - 80px)/6);min-width:170px}.ln-auto .ln-copy{display:block}}
