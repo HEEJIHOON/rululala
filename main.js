@@ -106,6 +106,7 @@ if (stayTabs && stayBox) {
     if (ghSec) ghSec.hidden = false;
     if (hotBox) hotBox.innerHTML = hot.map(pcard).join("");
     if (ghBox) ghBox.innerHTML = gh.length ? gh.map(pcard).join("") : `<p class="ss-empty">${c} 게스트하우스 사진을 준비 중이에요. 다른 나라 탭에서도 둘러보세요.</p>`;
+    if(window.RuluWish) { if(hotBox) window.RuluWish.wire(hotBox); if(ghBox) window.RuluWish.wire(ghBox); }
   };
 
   document.querySelectorAll(".stay-collection").forEach(el => { if(window.RuluWish) window.RuluWish.wire(el); });
