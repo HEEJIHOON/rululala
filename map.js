@@ -163,6 +163,13 @@
     return null;
   }
 
+  // OSM 장소 데이터를 팝업 HTML로 넣기 전에 특수문자를 모두 이스케이프해요. (XSS 방지)
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (ch) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
+    });
+  }
+
   function renderPois(elements) {
     ["sight", "stay"].forEach(function (k) { layers[k].clearLayers(); });
     var counts = { sight: 0, stay: 0 };
@@ -176,10 +183,10 @@
       if (seen[skey]) return;
       seen[skey] = 1;
       counts[cat]++;
-      var extra = t.cuisine ? " · " + String(t.cuisine).replace(/_/g, " ") : "";
+      var extra = t.cuisine ? " · " + esc(String(t.cuisine).replace(/_/g, " ")) : "";
       L.marker([el.lat, el.lon], { icon: pin(cat) })
         .addTo(layers[cat])
-        .bindPopup("<b>" + name.replace(/</g, "&lt;") + "</b><br><span style='color:#787574;font-size:12px'>" + CATS[cat].label + extra + "</span>");
+        .bindPopup("<b>" + esc(name) + "</b><br><span style='color:#787574;font-size:12px'>" + CATS[cat].label + extra + "</span>");
     });
     return counts;
   }
